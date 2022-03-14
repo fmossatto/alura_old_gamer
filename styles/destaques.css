@@ -1,5 +1,23 @@
 .destaques {
-    border: 1px solid orange;
+    align-items: center;
+    background: url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/07/nintendo-consoles-predicting-switch-successor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     height: 22em;
     width: 100%;
+}
+
+.destaques_container {
+    border: 1px solid orange;
+    color: white;
+    height: 50%;
+    margin-bottom: 2em;
+    width: 75%;
+}
+
+.destaques_container h2{
+    font-size: 2.5em;
 }

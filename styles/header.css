@@ -55,5 +55,10 @@
     color: #2A7AE4;
     font-weight: 400;
     padding: 1em;
+    transition: 0.2s;
     width: 11.5em;
+}
+
+.header_login_button:hover {
+    background-color: #D4E4FA;
 }
