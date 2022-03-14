@@ -1,6 +1,6 @@
 .header {
     align-items: center;
-    border: 1px solid orange;
+
     display: flex;
     height: 7em;
     justify-content: space-between;
@@ -8,15 +8,51 @@
     width: 75%;
 }
 
-.header_logo {
-    color: #2A7AE4;
+.header_container_direita {
+    align-items: center;
+    display: flex;
+    gap: 2em;
+}
+
+.header_logo img {
+    cursor: pointer;
+    height: 3em;
+}
+
+.header_pesquisa_container {
+    align-items: center;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    display: flex;
+    height: 2.5em;
+    justify-content: space-around;
+    width: 24.5em;
+
+}
+
+.header_pesquisa_container input {
+    background-color: transparent;
+    border: none;
+    height: 2em;
+    outline: none;
+    width: 20em;
+}
+
+.header_pesquisa_container input::placeholder {
+    color: #A2A2A2;
+}
+
+.header_pesquisa_container img {
+    cursor: pointer;
+    height: 1.4em;
+    width: 1.4em;
 }
 
 .header_login_button {
     background-color: transparent;
+    cursor: pointer;
     border: 1px solid #2A7AE4;
     color: #2A7AE4;
-    font-family: 'Raleway';
     font-weight: 400;
     padding: 1em;
     width: 11.5em;
