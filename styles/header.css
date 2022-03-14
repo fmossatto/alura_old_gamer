@@ -1,0 +1,23 @@
+.header {
+    align-items: center;
+    border: 1px solid orange;
+    display: flex;
+    height: 7em;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.header_logo {
+    color: #2A7AE4;
+}
+
+.header_login_button {
+    background-color: transparent;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    font-family: 'Raleway';
+    font-weight: 400;
+    padding: 1em;
+    width: 11.5em;
+}
