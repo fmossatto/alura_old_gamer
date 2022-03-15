@@ -1,8 +1,9 @@
 .destaques {
     align-items: center;
-    background: url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/07/nintendo-consoles-predicting-switch-successor.jpg");
+    background-image: url('../assets/img/controles.png');
+    background-position:right;
+    background-color: #2A7AE4;
     background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -11,13 +12,35 @@
 }
 
 .destaques_container {
-    border: 1px solid orange;
     color: white;
-    height: 50%;
+    height: 65%;
     margin-bottom: 2em;
     width: 75%;
 }
 
-.destaques_container h2{
-    font-size: 2.5em;
+.destaques_titulo{
+    font-size: 3em;
+
+}
+
+.destaques_descricao{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.destaques_botao {
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 700;
+    padding: 1em;
+    transition: 0.2s;
+    width: 10em;
+}
+
+.destaques_botao:hover {
+    background-color: #fff;
+    color: #2A7AE4;
+
 }

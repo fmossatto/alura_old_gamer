@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/destaques.css">
+    <link rel="stylesheet" href="./styles/index_main.css">
 </head>
 <body>
     <div class="container_principal">
-        <header class="header">
+        
+        <header class="header"><!--Bloco do Header --- contém toda a parte do cabeçalho-->
             <div class="header_container_direita">
                 <div class="header_logo">
                     <img src="./assets/img/logo1.svg" alt="icone da logo">
@@ -30,11 +32,131 @@
                 </button>
             </div>
         </header>
-        <section class="destaques">
+
+        <section class="destaques"><!--Bloco de destaques --- contém o banner principal-->
             <div class="destaques_container">
-                <h2 class="destaques_titulo">Promoção de Inaugural</h2>
-                <p class="destaques_descricao">Venha comemorar a nossa inauguração economizando 30% em produtos Nintendo</p>
+                <h2 class="destaques_titulo">Promoção Inaugural</h2>
+                <p class="destaques_descricao">Venha comemorar a nossa inauguração economizando 30% em qualquer controle</p>
                 <button class="destaques_botao">Ver produtos</button>
+            </div>
+        </section>
+
+        <section class="main_container"><!--Bloco principal --- contém toda a parte dos produtos-->
+            <div class="vitrine_container"><!--Vitrine de Controles-->
+                <div class="vitrine_header">
+                    <h2 class="vitrine_header_titulo">Controles</h2>
+                    <a href="#" class="vitrine_header_link">Ver tudo <img src="./assets/img/right_arrow1.svg"></a>
+                </div>
+                <div class="vitrine_cards">
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="assets/img/produtos/controle_snes.jpg"/>
+                        <p class="vitrine_cards_produto_nome">Controle de Super Nintendo</p>
+                        <p class="vitrine_cards_produto_preco">R$ 95,00</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="./assets/img/produtos/controle_n64.jpg"/>
+                        <p class="vitrine_cards_produto_nome">Controle de Nintendo 64</p>
+                        <p class="vitrine_cards_produto_preco">R$ 120,00</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="./assets/img/produtos/controle_ps2.jpg"/>
+                        <p class="vitrine_cards_produto_nome">Controle de Playstation 2</p>
+                        <p class="vitrine_cards_produto_preco">R$ 80,00</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="./assets/img/produtos/controle_saturn.jpg"/>
+                        <p class="vitrine_cards_produto_nome">Controle de Sega Saturn</p>
+                        <p class="vitrine_cards_produto_preco">R$ 105,00</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="./assets/img/produtos/controle_x360.jpg"/>
+                        <p class="vitrine_cards_produto_nome">Controle de Xbox 360</p>
+                        <p class="vitrine_cards_produto_preco">R$ 198,00</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vitrine_container"><!--Vitrine de Consoles-->
+                <div class="vitrine_header">
+                    <h2 class="vitrine_header_titulo">Consoles</h2>
+                    <a href="#" class="vitrine_header_link">Ver tudo <img src="./assets/img/right_arrow1.svg"></a>
+                </div>
+                <div class="vitrine_cards">
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="assets/img/produtos/console_xbox360.jpg"/>
+                        <p class="vitrine_cards_produto_nome">Xbox 360</p>
+                        <p class="vitrine_cards_produto_preco">R$ 495,00</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="./assets/img/produtos/console_switch.jpg"/>
+                        <p class="vitrine_cards_produto_nome">Nintendo Switch</p>
+                        <p class="vitrine_cards_produto_preco">R$ 1.649,99</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="./assets/img/produtos/console_megaDrive.jpg"/>
+                        <p class="vitrine_cards_produto_nome">Mega Drive 2</p>
+                        <p class="vitrine_cards_produto_preco">R$ 225,00</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="./assets/img/produtos/console_N64.jpg"/>
+                        <p class="vitrine_cards_produto_nome">Nintendo 64</p>
+                        <p class="vitrine_cards_produto_preco">R$ 375,00</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="./assets/img/produtos/console_psvita.jpg"/>
+                        <p class="vitrine_cards_produto_nome">PS VITA</p>
+                        <p class="vitrine_cards_produto_preco">R$ 526,00</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vitrine_container"><!--Vitrine de Jogos-->
+                <div class="vitrine_header">
+                    <h2 class="vitrine_header_titulo">Jogos</h2>
+                    <a href="#" class="vitrine_header_link">Ver tudo <img src="./assets/img/right_arrow1.svg"></a>
+                </div>
+                <div class="vitrine_cards">
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="assets/img/produtos/jogo_superMarioOdyssey.jpg"/>
+                        <p class="vitrine_cards_produto_nome">Switch - Super Mario Odyssey</p>
+                        <p class="vitrine_cards_produto_preco">R$ 250,00</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="./assets/img/produtos/jogo_sonic2.jpg"/>
+                        <p class="vitrine_cards_produto_nome">Mega Drive - Sonic 2</p>
+                        <p class="vitrine_cards_produto_preco">R$ 185,00</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="./assets/img/produtos/jogo_uncharted3.jpg"/>
+                        <p class="vitrine_cards_produto_nome">Playstation 3 - Uncharted 3</p>
+                        <p class="vitrine_cards_produto_preco">R$ 45,00</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="./assets/img/produtos/jogo_guitarHero2.jpg"/>
+                        <p class="vitrine_cards_produto_nome">Playstation 2 - Guitar Hero 2</p>
+                        <p class="vitrine_cards_produto_preco">R$ 62,00</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                    <div class="vitrine_cards_produto">
+                        <img class="vitrine_cards_produto_imagem" src="./assets/img/produtos/jogo_superMarioWorld.jpg"/>
+                        <p class="vitrine_cards_produto_nome">Super Nintendo - Super Mario World</p>
+                        <p class="vitrine_cards_produto_preco">R$ 96,00</p>
+                        <a href="#" class="vitrine_cards_produto_link">Ver produto</a>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
