@@ -1,6 +1,7 @@
+@import url('./variaveis.css');
+
 .header {
     align-items: center;
-
     display: flex;
     height: 7em;
     justify-content: space-between;
@@ -21,7 +22,7 @@
 
 .header_pesquisa_container {
     align-items: center;
-    background-color: #F5F5F5;
+    background-color: var(--cinzaClaro);
     border-radius: 20px;
     display: flex;
     height: 2.5em;
@@ -51,8 +52,8 @@
 .header_login_button {
     background-color: transparent;
     cursor: pointer;
-    border: 1px solid #2A7AE4;
-    color: #2A7AE4;
+    border: 1px solid var(--primaria);
+    color: var(--primaria);
     font-weight: 400;
     padding: 1em;
     transition: 0.2s;
@@ -60,5 +61,5 @@
 }
 
 .header_login_button:hover {
-    background-color: #D4E4FA;
+    background-color: var(--primariaHover);
 }

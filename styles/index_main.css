@@ -1,79 +1,103 @@
-.main_container {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    margin: 0 auto;
-    width: 75%;
+@import url("./variaveis.css");
+
+.main {
+  background-color: var(--cinzaClaro);
+  padding-top: 0.5em;
 }
 
-.vitrine_container {
-    height: 19.5em;
-    margin: 2.5em 0;
-    width: 100%;
+.main_container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 75%;
+}
+
+.vitrine {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  margin: 3em 0;
+  width: 100%;
 }
 
 .vitrine_header {
-    align-items: center;
-    display: flex;
-    height: 2.5em;
-    justify-content: space-between;
-    width: 100%;
+  text-align: center;
 }
 
-.vitrine_header_titulo {
-    color: #464646;
+.vitrine_header h2 {
+  border-bottom: 1px dashed black;
+  display: inline-block;
+  margin: 0;
+  width: 50%;
 }
 
-.vitrine_header_link {
-    color: #2A7AE4;
-    display: flex;
-    font-size: 0.8em;
-    line-height: 2em;
-    font-weight: 700;
-    text-decoration: none;
+.vitrine_descricao {
+  font-weight: 500;
+  margin: 0.5em 0 0 0;
 }
 
-.vitrine_header_link img {
-    margin: 0 0.5em;
-    width: 1.2em;
+.vitrine_produtos {
+  display: flex;
+  gap: 2%;
+  justify-content: space-between;
+  height: 26.5em;
+  margin-top: 2.5%;
 }
 
-.vitrine_cards {
-    display: flex;
-    gap: 1%;
-    height: 17em;
-    width: 100%;
+.vitrine_card {
+  background-color: var(--branco);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 230px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+  width: calc(97% / 4);
 }
 
-.vitrine_cards_produto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: calc(95% / 5);
+.vitrine_card:hover {
+  transform: scale(1.1);
 }
 
-.vitrine_cards_produto_imagem {
-    height: 10em;
-    width: 100%;
-    margin: 0;
+.vitrine_card:hover .vitrine_card_botao {
+  opacity: 1;
+  transform: translatey(0);
 }
 
-.vitrine_cards_produto_nome {
-    color: #A2A2A2;
-    font-weight: 400;
-    margin: 0;
+.vitrine_card_imagem {
+  border-radius: 8px;
+  height: 50%;
+  margin: 0 auto;
+  width: 95%;
 }
 
-
-.vitrine_cards_produto_preco {
-    font-weight: 700;
-    margin: 0;
+.vitrine_card_nome {
+  color: var(--fonte);
+  font-size: 1.2em;
+  padding: 0 0.5em;
+  margin: 0;
 }
 
-.vitrine_cards_produto_link {
-    color: #2A7AE4;
-    font-weight: 700;
-    text-decoration: none;
-    margin: 0;
+.vitrine_card_preco {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0 0.5em;
+  margin: 0;
+}
+
+.vitrine_card_botao {
+  align-self: center;
+  background-color: #2a7ae4;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  padding: 1em;
+  opacity: 0;
+  transform: translatey(4em);
+  transition: 0.8s;
+  width: 80%;
 }
