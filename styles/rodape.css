@@ -1,0 +1,142 @@
+:root {
+    --azulClaro: #EAF2FD;
+    --cinzaEscuro: #A2A2A2;
+    --cinzaClaro: #F5F5F5;
+    --primaria: #2A7AE4;
+    --primariaHover: #D4E4FA;
+    --branco: #FFF;
+    --preto: #000;
+}
+
+.footer {
+    background-color: var(--azulClaro);
+    padding: 2em 0;
+    width: 100%;
+}
+
+.footer_container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 75%;
+}
+
+.footer_sobre {
+    border-right: 1px solid var(--cinzaEscuro);
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+    width: 50%;
+}
+
+.footer_sobre_midia {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.footer_logo {
+    width: 30%;
+}
+
+.footer_social {
+    border: 2px solid var(--cinzaEscuro);
+    color: var(--cinzaEscuro);
+    border-radius: 8px;
+    display: flex;
+    font-weight: 700;
+    justify-content: space-around;
+    height: 3em;
+    margin-right: 5%;
+    width: 60%;
+}
+
+.footer_sobre_quemSomos {
+    line-height: 1.5em;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+.footer_sobre_destaque {
+    font-weight: 700;
+}
+
+/*Começo da sessão do Rodapé*/
+.footer_contato {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+    width: 50%;
+}
+
+
+.footer_contato_header {
+    border-bottom: 1px dashed black;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
+.footer_contato_formulario {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer_contato_formulario_nome {
+    margin-left: 5%;
+    padding: 0.5em;
+    outline: none;
+    width: 80%;
+}
+
+.footer_contato_formulario_mensagem {
+    resize: none;
+    margin-left: 5%;
+    padding: 0.5em;
+    width: 80%;
+}
+
+.footer_contato_formulario_submit {
+    background-color: var(--primaria);
+    cursor: pointer;
+    border: none;
+    color: var(--branco);
+    font-weight: 700;
+    margin-left: 5%;
+    padding: 1em;
+    transition: 0.2s;
+    width: 11.5em;
+}
+
+.footer_contato_formulario_submit:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/*Sessão desenvolvido Por:*/
+
+.dev {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.dev p {
+    margin: 0;
+}
+
+.dev img {
+    height: 3em;
+    width: 3em;
+}
+
+.dev svg {
+    height: 3em;
+    width: 3em;
+}
+
+.dev svg:hover {
+    fill: var(--primaria);
+}

@@ -1,8 +1,18 @@
+:root {
+    --azulClaro: #EAF2FD;
+    --cinzaEscuro: #A2A2A2;
+    --cinzaClaro: #F5F5F5;
+    --primaria: #2A7AE4;
+    --primariaHover: #D4E4FA;
+    --branco: #FFF;
+    --preto: #000;
+}
+
 .destaques {
     align-items: center;
     background-image: url('../assets/img/controles.png');
     background-position:right;
-    background-color: #2A7AE4;
+    background-color: var(--primaria);
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -12,9 +22,10 @@
 }
 
 .destaques_container {
-    color: white;
+    color: var(--branco);
     height: 65%;
     margin-bottom: 2em;
+    max-width: 1200px;
     width: 75%;
 }
 
@@ -32,7 +43,7 @@
     background-color: transparent;
     cursor: pointer;
     border: 1px solid #fff;
-    color: #fff;
+    color: var(--branco);
     font-weight: 700;
     padding: 1em;
     transition: 0.2s;
@@ -40,7 +51,7 @@
 }
 
 .destaques_botao:hover {
-    background-color: #fff;
-    color: #2A7AE4;
+    background-color: var(--branco);
+    color: var(--primaria);
 
 }

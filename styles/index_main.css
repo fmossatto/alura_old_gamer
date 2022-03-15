@@ -1,8 +1,17 @@
-@import url("./variaveis.css");
+:root {
+  --azulClaro: #EAF2FD;
+  --cinzaEscuro: #A2A2A2;
+  --cinzaClaro: #F5F5F5;
+  --primaria: #2A7AE4;
+  --primariaHover: #D4E4FA;
+  --branco: #FFF;
+  --preto: #000;
+}
 
 .main {
   background-color: var(--cinzaClaro);
   padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .main_container {
@@ -24,7 +33,7 @@
 }
 
 .vitrine_header h2 {
-  border-bottom: 1px dashed black;
+  border-bottom: 1px dashed var(--preto);
   display: inline-block;
   margin: 0;
   width: 50%;
@@ -73,7 +82,7 @@
 }
 
 .vitrine_card_nome {
-  color: var(--fonte);
+  color: var(--cinzaEscuro);
   font-size: 1.2em;
   padding: 0 0.5em;
   margin: 0;
@@ -88,9 +97,9 @@
 
 .vitrine_card_botao {
   align-self: center;
-  background-color: #2a7ae4;
+  background-color: var(--primaria);
   border: none;
-  color: white;
+  color: var(--branco);
   cursor: pointer;
   font-weight: 700;
   margin: 0 auto;
@@ -100,4 +109,8 @@
   transform: translatey(4em);
   transition: 0.8s;
   width: 80%;
+}
+
+.vitrine_card_botao:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
