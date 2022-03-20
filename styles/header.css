@@ -1,12 +1,4 @@
-:root {
-    --azulClaro: #EAF2FD;
-    --cinzaEscuro: #A2A2A2;
-    --cinzaClaro: #F5F5F5;
-    --primaria: #2A7AE4;
-    --primariaHover: #D4E4FA;
-    --branco: #FFF;
-    --preto: #000;
-}
+@import url('./variaveis.css');
 
 .header {
     align-items: center;
@@ -60,15 +52,40 @@
 
 .header_login_button {
     background-color: transparent;
-    cursor: pointer;
     border: 1px solid var(--primaria);
     color: var(--primaria);
+    display: inline-block;
     font-weight: 400;
     padding: 1em;
     transition: 0.2s;
-    width: 11.5em;
+    text-align: center;
+    text-decoration: none;
+    width: 10em;
 }
 
 .header_login_button:hover {
     background-color: var(--primariaHover);
 }
+
+/*Design responsivo para celulares, considerando largura máxima de 375 pixels*/
+
+@media screen and (max-width: 375px) {
+    .header {
+        height: 5em;
+        padding: 0 0.5em;
+        width: 90%;
+    }
+
+    .header_logo img {
+        height: 2.5em;
+    }
+
+    .header_pesquisa_container{
+        display: none;
+    }
+
+    .header_login_button{
+        padding: 0.5em;
+        width: 7em;
+    }
+  }

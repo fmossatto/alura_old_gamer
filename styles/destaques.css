@@ -1,12 +1,4 @@
-:root {
-    --azulClaro: #EAF2FD;
-    --cinzaEscuro: #A2A2A2;
-    --cinzaClaro: #F5F5F5;
-    --primaria: #2A7AE4;
-    --primariaHover: #D4E4FA;
-    --branco: #FFF;
-    --preto: #000;
-}
+@import url('./variaveis.css');
 
 .destaques {
     align-items: center;
@@ -54,4 +46,42 @@
     background-color: var(--branco);
     color: var(--primaria);
 
+}
+
+/*Design responsivo para celulares, considerando largura máxima de 375 pixels*/
+
+@media screen and (max-width: 375px) {
+    .destaques {
+        background-image: var(--primaria);
+        height: 15em;
+    }
+
+    .destaques_container {
+        height: 100%;
+        padding: 0 0.5em;
+        margin: 0;
+        width: calc(100% - 1em);
+    }
+    
+    .destaques_titulo{
+        font-size: 2em;
+    
+    }
+    
+    .destaques_descricao{
+        font-size: 1em;
+        font-weight: 400;
+        margin-bottom: 3em;
+    }
+    
+    .destaques_botao {
+        background-color: transparent;
+        cursor: pointer;
+        border: 1px solid #fff;
+        color: var(--branco);
+        font-weight: 700;
+        padding: 1em;
+        transition: 0.2s;
+        width: 10em;
+    }
 }

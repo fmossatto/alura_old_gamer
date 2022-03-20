@@ -1,0 +1,65 @@
+@import url('./variaveis.css');
+
+
+body {
+    font-family: var(--raleway);
+}
+
+.main_container {
+    background-color: var(--cinzaClaro);
+    padding: 5em 0;
+}
+
+.formulario_container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 75%;
+}
+
+.formulario_header {
+    border-bottom: 1px dashed black;
+    text-align: center;
+    width: 50%;
+}
+
+.formulario {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 2em;
+    width: 50%;
+}
+
+.formulario_login {
+    border: none;
+    padding: 1em;
+    outline: none;
+    width: calc(70% - 2em);
+}
+
+.formulario_senha {
+    border: none;
+    padding: 1em;
+    outline: none;
+    width: calc(70% - 2em);
+}
+
+.formulario_submit {
+    background-color: var(--primaria);
+    border: none;
+    cursor: pointer;
+    color: var(--branco);
+    font-size: 1em;
+    font-weight: 700;
+    padding: 1em;
+    transition: 0.2s;
+    width: 70%;
+}
+
+.formulario_submit:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
