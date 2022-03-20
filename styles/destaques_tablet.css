@@ -1,0 +1,25 @@
+/*Design responsivo para tablets, considerando largura máxima de 1023 pixels*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .destaques {
+        height: 18em;
+    }
+
+    .destaques_container {
+        height: 80%;
+        padding: 0 0.5em;
+        margin: 0;
+        width: calc(100% - 1em);
+    }
+    
+    .destaques_titulo{
+        font-size: 2em;
+    
+    }
+    
+    .destaques_descricao{
+        font-size: 1em;
+        margin-bottom: 3em;
+    }
+
+}

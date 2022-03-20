@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    .formulario_container {
+        max-width: none;
+    }
+    
+    .formulario_header {
+        width: 75%;
+    }
+    
+    .formulario {
+        width: 50%;
+    }
+    
+    .formulario_login {
+        width: calc(100% - 2em);
+    }
+    
+    .formulario_senha {
+        width: calc(100% - 2em);
+    }
+    
+    .formulario_submit {
+        width: 100%;
+    }
+
+}

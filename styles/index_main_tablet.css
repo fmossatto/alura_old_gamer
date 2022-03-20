@@ -1,0 +1,47 @@
+/*Design responsivo para tablets, considerando largura máxima de 1023 pixels*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {  
+      
+      .main_container {
+        max-width: none;
+      }
+      
+      .vitrine {
+        height: auto;
+        margin: 2em 0;
+      }
+      
+      .vitrine_produtos {
+        flex-wrap: wrap;
+        gap: 0 10%;
+        height: auto;
+      }
+      
+      .vitrine_card {
+        height: 26.5em;
+        margin-bottom: 1em;
+        max-width: 320px;
+        overflow: visible;
+        transition: none;
+        width: calc(90% / 2);
+      }
+      
+      .vitrine_card:hover {
+        transform: none;
+      }
+      
+      .vitrine_card:hover .vitrine_card_botao {
+        transform: none;
+      }
+      
+      .vitrine_card_preco {
+        font-size: 1.5em;
+      }
+      
+      .vitrine_card_botao {
+        padding: 1em 0.5em;
+        opacity: 1;
+        transform: none;
+        width: calc(100% - 1em);
+      }
+}

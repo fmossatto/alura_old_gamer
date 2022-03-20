@@ -1,0 +1,78 @@
+/*Design responsivo para celulares, considerando largura máxima de 767 pixels*/
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .footer {
+        padding: 0.5em;
+        width: calc(100% - 1em);
+    }
+
+    .footer_container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer_sobre {
+        border-bottom: 1px solid var(--cinzaEscuro);
+        border-right: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+
+    .footer_sobre_midia {
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .footer_logo {
+        width: 50%;
+    }
+
+    .footer_social {
+        margin: 0;
+        width: 70%;
+    }
+
+    .footer_sobre_quemSomos {
+        margin: 0;
+    }
+
+    .footer_contato {
+        margin: 1em 0;
+        width: 100%;
+    }
+    
+    .footer_contato_formulario {
+        align-items: center;
+        margin-top: 1em;
+        gap: 1em;
+    }
+    
+    .footer_contato_formulario_nome {
+        margin: 0;
+        width: calc(90% - 1em)
+    }
+    
+    .footer_contato_formulario_mensagem {
+        margin: 0;
+        width: calc(90% - 1em)
+    }
+    
+    .footer_contato_formulario_submit {
+        margin: 0;
+        width: 90%;
+    }
+    
+    .footer_contato_formulario_submit:hover {
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    
+    /*Sessão desenvolvido Por:*/
+    
+    .dev {
+        margin-top: 1em;
+    }
+}

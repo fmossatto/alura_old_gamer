@@ -44,10 +44,10 @@
     color: var(--cinzaEscuro);
 }
 
-.header_pesquisa_container img {
+.header_pesquisa_container i {
+    color: var(--cinzaEscuro);
     cursor: pointer;
-    height: 1.4em;
-    width: 1.4em;
+    font-size: 1.4em;
 }
 
 .header_login_button {
@@ -67,25 +67,10 @@
     background-color: var(--primariaHover);
 }
 
-/*Design responsivo para celulares, considerando largura máxima de 375 pixels*/
-
-@media screen and (max-width: 375px) {
-    .header {
-        height: 5em;
-        padding: 0 0.5em;
-        width: 90%;
-    }
-
-    .header_logo img {
-        height: 2.5em;
-    }
-
-    .header_pesquisa_container{
-        display: none;
-    }
-
-    .header_login_button{
-        padding: 0.5em;
-        width: 7em;
-    }
-  }
+.header_pesquisa_responsivo {
+    color: var(--cinzaEscuro);
+    cursor: pointer;
+    display: none;
+    font-size: 2em;
+    margin-left: 0.5em;
+}

@@ -1,0 +1,30 @@
+/*Design responsivo para celulares, considerando largura máxima de 767 pixels*/
+@media screen and (min-width: 360px) and (max-width:767px) {
+    
+    .formulario_container {
+        max-width: none;
+    }
+    
+    .formulario_header {
+        width: 100%;
+    }
+    
+    .formulario {
+        gap: 1em;
+        margin-top: 1em;
+        max-width: 425px;
+        width: 100%;
+    }
+    
+    .formulario_login {
+        width: calc(100% - 2em);
+    }
+    
+    .formulario_senha {
+        width: calc(100% - 2em);
+    }
+    
+    .formulario_submit {
+        width: 100%;
+    }
+}

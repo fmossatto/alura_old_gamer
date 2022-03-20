@@ -34,6 +34,7 @@
 }
 
 .footer_social {
+    align-items: center;
     border: 2px solid var(--cinzaEscuro);
     color: var(--cinzaEscuro);
     border-radius: 8px;
@@ -43,6 +44,11 @@
     height: 3em;
     margin-right: 5%;
     width: 60%;
+}
+
+.footer_social a {
+    color: var(--cinzaEscuro);
+    text-decoration: none;
 }
 
 .footer_sobre_quemSomos {
@@ -119,97 +125,11 @@
     margin: 0;
 }
 
-.dev img {
-    height: 3em;
-    width: 3em;
+.dev i {
+    color: var(--cinzaEscuro);
+    font-size: 3em;
 }
 
-.dev svg {
-    height: 3em;
-    width: 3em;
-}
-
-.dev svg:hover {
-    fill: var(--primaria);
-}
-
-/*Design responsivo para celulares, considerando largura máxima de 375 pixels*/
-
-@media screen and (max-width: 375px) {
-    .footer {
-        padding: 0.5em;
-        width: calc(100% - 1em);
-    }
-
-    .footer_container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .footer_sobre {
-        border-bottom: 1px solid var(--cinzaEscuro);
-        border-right: none;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        width: 100%;
-    }
-
-    .footer_sobre_midia {
-        align-items: center;
-        flex-direction: column;
-        gap: 1em;
-        margin-bottom: 1em;
-    }
-    
-    .footer_logo {
-        width: 50%;
-    }
-
-    .footer_social {
-        margin: 0;
-        width: 70%;
-    }
-
-    .footer_sobre_quemSomos {
-        margin: 0;
-    }
-
-    .footer_contato {
-        margin: 1em 0;
-        width: 100%;
-    }
-    
-    .footer_contato_formulario {
-        align-items: center;
-        margin-top: 1em;
-        gap: 1em;
-    }
-    
-    .footer_contato_formulario_nome {
-        margin: 0;
-        width: calc(90% - 1em)
-    }
-    
-    .footer_contato_formulario_mensagem {
-        margin: 0;
-        width: calc(90% - 1em)
-    }
-    
-    .footer_contato_formulario_submit {
-        margin: 0;
-        width: 90%;
-    }
-    
-    .footer_contato_formulario_submit:hover {
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-    
-    /*Sessão desenvolvido Por:*/
-    
-    .dev {
-        margin-top: 1em;
-    }
-
+.dev i:hover {
+    color: var(--primaria);
 }

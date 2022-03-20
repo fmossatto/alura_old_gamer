@@ -80,6 +80,7 @@ body {
 
 .vitrine_card_nome {
   color: var(--cinzaEscuro);
+  font-family: var(--rokkit);
   font-size: 1.2em;
   padding: 0 0.5em;
   margin: 0;
@@ -87,7 +88,7 @@ body {
 
 .vitrine_card_preco {
   font-family: var(--rokkit);
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 700;
   padding: 0 0.5em;
   margin: 0;
@@ -113,39 +114,3 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-/*Design responsivo para celulares, considerando largura máxima de 375 pixels*/
-
-@media screen and (max-width: 375px) {
-  
-  .main_container {
-    margin: 0;
-    width: 100%;
-  }
-  
-  .vitrine {
-    height: auto;
-    margin: 1em 0;
-    width: 100%;
-  }
-  
-  .vitrine_produtos {
-    height: auto;
-    flex-direction: column;
-    margin-top: 2.5%;
-  }
-  
-  .vitrine_card {
-    height: 30em;
-    margin: 0 auto;
-    overflow: visible;
-    transition: none;
-    width: 70%;
-  }
-  
-  .vitrine_card_botao {
-    opacity: 1;
-    transform: none;
-    width: 80%;
-  }
-
-}

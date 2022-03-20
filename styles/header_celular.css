@@ -1,0 +1,29 @@
+/*Design responsivo para celulares, considerando largura máxima de 375 pixels*/
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .header {
+        height: 5em;
+        padding: 0 0.5em;
+        width: 90%;
+    }
+
+    .header_logo img {
+        height: 2.5em;
+    }
+
+    .header_pesquisa_container{
+        display: none;
+    }
+
+    .header_login_button{
+        padding: 0.5em;
+        width: 7em;
+    }
+
+    .header_pesquisa_responsivo {
+        color: var(--cinzaEscuro);
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1.5em;
+      }
+  }

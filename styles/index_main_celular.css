@@ -1,0 +1,42 @@
+/*Design responsivo para celulares, considerando largura máxima de 767 pixels*/
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  
+    .main_container {
+      margin: 0;
+      width: 100%;
+    }
+    
+    .vitrine {
+      height: auto;
+      margin: 1em 0;
+      width: 100%;
+    }
+    
+    .vitrine_produtos {
+      gap: 2em;
+      flex-direction: column;
+      height: auto;
+      margin-top: 2.5%;
+    }
+    
+    .vitrine_card {
+      height: 30em;
+      margin: 0 auto;
+      max-width: 320px;
+      overflow: visible;
+      transition: none;
+      width: 70%;
+    }
+  
+    .vitrine_card:hover {
+      transform: none;
+    }
+    
+    .vitrine_card_botao {
+      opacity: 1;
+      transform: none;
+      width: calc(100% - 1em);
+    }
+  
+  }

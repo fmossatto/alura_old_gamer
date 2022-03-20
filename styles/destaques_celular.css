@@ -1,0 +1,27 @@
+/*Design responsivo para celulares, considerando largura máxima de 767 pixels*/
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .destaques {
+        background-image: var(--primaria);
+        height: 15em;
+    }
+
+    .destaques_container {
+        height: 100%;
+        padding: 0 0.5em;
+        margin: 0;
+        width: calc(100% - 1em);
+    }
+    
+    .destaques_titulo{
+        font-size: 2em;
+    
+    }
+    
+    .destaques_descricao{
+        font-size: 1em;
+        font-weight: 400;
+        margin-bottom: 3em;
+    }
+
+}

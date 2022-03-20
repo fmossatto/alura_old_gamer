@@ -1,0 +1,32 @@
+  /*Design responsivo para tablets, considerando largura máxima de 768 pixels*/
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .header {
+        height: 5em;
+        padding: 0 0.5em;
+        width: calc(100% - 1em);
+    }
+    
+    .header_container_direita {
+        gap: 1em;
+    }
+    
+    .header_logo img {
+        height: 2.5em;
+    }
+    
+    .header_pesquisa_container {
+        padding: 0 0.5em;
+        width: 18em;    
+    }
+    
+    .header_pesquisa_container input {
+        width: 16em;
+    }
+    
+    .header_login_button{
+        padding: 0.5em;
+        width: 7em;
+    }
+}

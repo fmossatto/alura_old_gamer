@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&family=Rokkitt:wght@100;300;400;700&display=swap');
 
 :root {
+
+    /*Fontes diversas*/
     --raleway: 'Raleway';
     --rokkit: 'Rokkitt', serif;
 
+    /*Cores utilizadas no layout*/
     --azulClaro: #EAF2FD;
     --cinzaEscuro: #A2A2A2;
     --cinzaClaro: #F5F5F5;
@@ -11,4 +14,5 @@
     --primariaHover: #D4E4FA;
     --branco: #FFF;
     --preto: #000;
+
 }

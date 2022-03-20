@@ -1,0 +1,35 @@
+    /*Design responsivo para tablets, considerando largura máxima de 1023 pixels*/
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .footer {
+            padding: 1em 0.5em;
+            width: calc(100% - 1em);
+        }
+        
+        .footer_container {
+            margin: 0;
+            max-width: none;
+            width: 100%;
+        }
+        
+        .footer_sobre {
+            margin: 1em 0;
+        }
+        
+        .footer_sobre_midia {
+            margin-bottom: 1em;
+        }
+        
+        /*Começo da sessão do Rodapé*/
+        .footer_contato {
+            margin: 1em 0;
+        }
+        
+        /*Sessão desenvolvido Por:*/
+        
+        .dev {
+            margin-top: 1em;
+        }    
+        
+    }
+    
