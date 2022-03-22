@@ -1,4 +1,4 @@
-@import url('./variaveis.css');
+@import url("./variaveis.css");
 
 .footer {
     background-color: var(--azulClaro);
@@ -69,7 +69,6 @@
     width: 50%;
 }
 
-
 .footer_contato_header {
     border-bottom: 1px dashed black;
     margin: 0 auto;
@@ -111,7 +110,7 @@
 }
 
 .footer_contato_formulario_submit:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /*Sessão desenvolvido Por:*/

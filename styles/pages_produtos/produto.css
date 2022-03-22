@@ -1,0 +1,224 @@
+@import url("../variaveis.css");
+
+/*Parte superior, contendo a imagem do produto e os detalhes*/
+
+.container_principal {
+    background-color: var(--cinzaClaro);
+    height: auto;
+    width: 100%;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.produto_container {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.produto_foto {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 26.5em;
+    width: 50%;
+}
+
+.produto_foto_imagem {
+    background-position: center;
+    background-size: cover;
+    height: 60%;
+    transition: 0.8s;
+    width: 60%;
+}
+
+.produto_foto_imagem:hover {
+    height: 90%;
+    width: 90%;
+}
+
+.produto_detalhes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: calc(26.5em - 2em);
+    padding: 2em 0;
+    width: 50%;
+}
+
+.produto_detalhes_nome {
+    margin: 0;
+}
+
+.produto_detalhes_descricao {
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.produto_detalhes_preco {
+    color: var(--preto);
+    font-family: var(--rokkit);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.produto_detalhes_comprar {
+    background-color: var(--primaria);
+    cursor: pointer;
+    border: none;
+    color: var(--branco);
+    font-weight: 700;
+    padding: 1em;
+    transition: 0.2s;
+    width: 11.5em;
+}
+
+.produto_detalhes_comprar:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Parte das tags do produto - Categorias*/
+
+.produto_tags {
+    height: auto;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.produto_tags_legenda {
+    border-bottom: 1px dashed var(--primaria);
+    color: var(--primaria);
+    font-weight: 700;
+    width: 10%;
+}
+
+.produto_tags_lista {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    padding-left: 0;
+}
+
+.produto_tags_itens {
+    background-color: var(--primaria);
+    border-radius: 4px;
+    padding: 0.5em;
+}
+
+.produto_tags_itens:hover {
+    transform: scale(1.1);
+}
+
+.produto_tags_link {
+    color: var(--branco);
+    font-size: 1em;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+/*Parte da vitrine dos produtos similares*/
+.vitrine {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    width: 75%;
+}
+
+.vitrine_header {
+    text-align: center;
+}
+
+.vitrine_titulo {
+    border-bottom: 1px dashed var(--preto);
+    display: inline-block;
+    margin: 0;
+    width: 50%;
+}
+
+.vitrine_descricao {
+    font-weight: 500;
+    margin: 0.5em 0 0 0;
+}
+
+.vitrine_produtos {
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+    height: 26.5em;
+    margin-top: 2.5%;
+}
+
+.vitrine_card {
+    background-color: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.2s;
+    width: calc(97% / 4);
+}
+
+.vitrine_card:hover {
+    transform: scale(1.1);
+}
+
+.vitrine_card:hover .vitrine_card_botao {
+    opacity: 1;
+    transform: translatey(0);
+}
+
+.vitrine_card_imagem {
+    border-radius: 8px;
+    height: 55%;
+    margin: 0.25em auto;
+    max-width: 200px;
+    width: 80%;
+}
+
+.vitrine_card_nome {
+    color: var(--cinzaEscuro);
+    font-family: var(--rokkit);
+    font-size: 1.2em;
+    padding: 0 0.5em;
+    margin: 0;
+}
+
+.vitrine_card_preco {
+    font-family: var(--rokkit);
+    font-size: 1.8em;
+    font-weight: 700;
+    padding: 0 0.5em;
+    margin: 0;
+}
+
+.vitrine_card_botao {
+    align-self: center;
+    background-color: var(--primaria);
+    border: none;
+    color: var(--branco);
+    cursor: pointer;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding: 1em;
+    opacity: 0;
+    transform: translatey(4em);
+    transition: 0.8s;
+    width: 80%;
+}
+
+.vitrine_card_botao:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
