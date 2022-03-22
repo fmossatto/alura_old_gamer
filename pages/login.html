@@ -1,109 +1,160 @@
 <!DOCTYPE html>
 <html lang="pr-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alura Old Gamer | Login</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alura Old Gamer | Login</title>
 
-    <link rel="stylesheet" href="../styles/base.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/header_celular.css">
-    <link rel="stylesheet" href="../styles/header_tablet.css">
-    <link rel="stylesheet" href="../styles/login.css">
-    <link rel="stylesheet" href="../styles/login_celular.css">
-    <link rel="stylesheet" href="../styles/login_tablet.css">
-    <link rel="stylesheet" href="../styles/rodape.css">
-    <link rel="stylesheet" href="../styles/rodape_celular.css">
-    <link rel="stylesheet" href="../styles/rodape_tablet.css">
-</head>
-<body>
-
-    <div class="container_principal">
-        <header class="header">
-            <!--Bloco do Header --- contém toda a parte do cabeçalho-->
-            <div class="header_container_direita">
-              <div class="header_logo">
-                <a href="../index.html"><img src="../assets/img/logo1.svg" alt="icone da logo" /></a>
-              </div>
-              <div class="header_pesquisa">
-                <div class="header_pesquisa_container">
-                  <input type="text" placeholder="O que deseja encontrar?" />
-                  <img src="../assets/img/search.svg" alt="icone de lupa" />
+        <link rel="stylesheet" href="../styles/base.css" />
+        <link rel="stylesheet" href="../styles/header.css" />
+        <link rel="stylesheet" href="../styles/header_celular.css" />
+        <link rel="stylesheet" href="../styles/header_tablet.css" />
+        <link rel="stylesheet" href="../styles/login.css" />
+        <link rel="stylesheet" href="../styles/login_celular.css" />
+        <link rel="stylesheet" href="../styles/login_tablet.css" />
+        <link rel="stylesheet" href="../styles/rodape.css" />
+        <link rel="stylesheet" href="../styles/rodape_celular.css" />
+        <link rel="stylesheet" href="../styles/rodape_tablet.css" />
+    </head>
+    <body>
+        <div class="container_principal">
+            <header class="header">
+                <!--Bloco do Header --- contém toda a parte do cabeçalho-->
+                <div class="header_container_direita">
+                    <div class="header_logo">
+                        <a href="../index.html"
+                            ><img
+                                src="../assets/img/logo1.svg"
+                                alt="icone da logo"
+                        /></a>
+                    </div>
+                    <div class="header_pesquisa">
+                        <div class="header_pesquisa_container">
+                            <input
+                                type="text"
+                                placeholder="O que deseja encontrar?"
+                            />
+                            <img
+                                src="../assets/img/search.svg"
+                                alt="icone de lupa"
+                            />
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="header_login">
-              <a href="./login.html" class="header_login_button">Login</a>
-            </div>
-          </header>
-
-          <!--Fim do Header - Cabeçalho-->
-
-          <section class="main_container">
-              <div class="formulario_container">
-                  <h2 class="formulario_header">Iniciar Sessão</h2>
-                  <form class="formulario">
-                      <input class="formulario_login" placeholder="Digite seu login" type="text">
-                      <input class="formulario_senha" placeholder="Digite sua senha" type="password">
-                      <button class="formulario_submit" type="submit" >Entrar</button>
-                  </form>
-              </div>
-          </section>
-
-          <footer class="footer">
-            <div class="footer_container">
-              <div class="footer_sobre">
-                <div class="footer_sobre_midia">
-                  <img class="footer_logo" src="../assets/img/logo1.svg" alt="icone da logo" />
-                  <div class="footer_social">
-                    <p>facebook</p>
-                    <p>instagram</p>
-                    <p>twitter</p>
-                  </div>            
+                <div class="header_login">
+                    <a href="./login.html" class="header_login_button">Login</a>
                 </div>
-                <!--Fim footer midias digitais-->
-                <div class="footer_sobre_quemSomos">
-                  <p>
-                    Somos focados no varejo de produtos destinados a gamers de coração e de profissão, temos
-                    todos os tipos de periféricos e dispositivos que complementarão sua experiência com os games.
-                    Também temos consoles e jogos de todas as gerações, contemplando os primórdios da era do Atari 2600
-                    e Odyssey, até os dias modernos com Playstation 5 e Xbox Series. Qualquer dúvida, crítica ou sugestão,
-                    disponibilizamos nossos canais para melhor atendermos nossos clientes, fiquem a vontade para entrar
-                    em contato conosco <span class="footer_sobre_destaque">e que a diversão nunca acabe.</span>                
-                  </p>
+                <div class="header_pesquisa_responsivo">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <!--Fim footer quem somos-->
-              </div>
-              <!--Fim footer Sobre a empresa-->
-    
-              <div class="footer_contato">
-                <h2 class="footer_contato_header">Fale Conosco</h2>
-                <form action="#" class="footer_contato_formulario">
-                  <input class="footer_contato_formulario_nome" type="text" placeholder="Digite seu nome"/>
-                  <textarea class="footer_contato_formulario_mensagem" rows="5"
-                  placeholder="Digite sua mensagem"></textarea>
-                  <button type="submit" class="footer_contato_formulario_submit">Enviar mensagem</button>
-                </form>
-              </div>
-              <!--Fim footer contato-->
-            </div>
-            <!--fim do footer container-->
-    
-            <div class="dev">
-              
-              <a href="https://www.linkedin.com/in/fernando-mossatto/" target="blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-    
-              <p>Desenvolvido por Fmossatto</p>
-              <p>2022</p>
-            </div>
-          </footer>
+            </header>
 
-          <!--Fim da Footer-->
-    </div>
-    
-    <script src="https://kit.fontawesome.com/5f5592f0e5.js" crossorigin="anonymous"></script>
-</body>
+            <!--Fim do Header - Cabeçalho-->
+
+            <section class="main_container">
+                <div class="formulario_container">
+                    <h2 class="formulario_header">Iniciar Sessão</h2>
+                    <form class="formulario">
+                        <input
+                            class="formulario_login"
+                            placeholder="Digite seu login"
+                            type="text"
+                        />
+                        <input
+                            class="formulario_senha"
+                            placeholder="Digite sua senha"
+                            type="password"
+                        />
+                        <button class="formulario_submit" type="submit">
+                            Entrar
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer_container">
+                    <div class="footer_sobre">
+                        <div class="footer_sobre_midia">
+                            <img
+                                class="footer_logo"
+                                src="../assets/img/logo1.svg"
+                                alt="icone da logo"
+                            />
+                            <div class="footer_social">
+                                <p>facebook</p>
+                                <p>instagram</p>
+                                <p>twitter</p>
+                            </div>
+                        </div>
+                        <!--Fim footer midias digitais-->
+                        <div class="footer_sobre_quemSomos">
+                            <p>
+                                Somos focados no varejo de produtos destinados a
+                                gamers de coração e de profissão, temos todos os
+                                tipos de periféricos e dispositivos que
+                                complementarão sua experiência com os games.
+                                Também temos consoles e jogos de todas as
+                                gerações, contemplando os primórdios da era do
+                                Atari 2600 e Odyssey, até os dias modernos com
+                                Playstation 5 e Xbox Series. Qualquer dúvida,
+                                crítica ou sugestão, disponibilizamos nossos
+                                canais para melhor atendermos nossos clientes,
+                                fiquem a vontade para entrar em contato conosco
+                                <span class="footer_sobre_destaque"
+                                    >e que a diversão nunca acabe.</span
+                                >
+                            </p>
+                        </div>
+                        <!--Fim footer quem somos-->
+                    </div>
+                    <!--Fim footer Sobre a empresa-->
+
+                    <div class="footer_contato">
+                        <h2 class="footer_contato_header">Fale Conosco</h2>
+                        <form action="#" class="footer_contato_formulario">
+                            <input
+                                class="footer_contato_formulario_nome"
+                                type="text"
+                                placeholder="Digite seu nome"
+                            />
+                            <textarea
+                                class="footer_contato_formulario_mensagem"
+                                rows="5"
+                                placeholder="Digite sua mensagem"
+                            ></textarea>
+                            <button
+                                type="submit"
+                                class="footer_contato_formulario_submit"
+                            >
+                                Enviar mensagem
+                            </button>
+                        </form>
+                    </div>
+                    <!--Fim footer contato-->
+                </div>
+                <!--fim do footer container-->
+
+                <div class="dev">
+                    <a
+                        href="https://www.linkedin.com/in/fernando-mossatto/"
+                        target="blank"
+                    >
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <p>Desenvolvido por Fmossatto</p>
+                    <p>2022</p>
+                </div>
+            </footer>
+
+            <!--Fim da Footer-->
+        </div>
+
+        <script
+            src="https://kit.fontawesome.com/5f5592f0e5.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
