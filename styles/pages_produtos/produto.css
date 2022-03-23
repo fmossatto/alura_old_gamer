@@ -96,7 +96,7 @@
     border-bottom: 1px dashed var(--primaria);
     color: var(--primaria);
     font-weight: 700;
-    width: 10%;
+    width: 6em;
 }
 
 .produto_tags_lista {
