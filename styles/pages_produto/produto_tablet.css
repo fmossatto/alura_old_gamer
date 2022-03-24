@@ -1,4 +1,4 @@
-@media screen and (min-width: 360px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .container_principal {
         padding-bottom: 1em;
     }
@@ -8,35 +8,23 @@
     }
 
     .produto_container {
-        flex-direction: column;
         padding: 0 0.5em;
         width: calc(100% - 1em);
     }
 
-    .produto_foto {
-        height: 18em;
-        width: 100%;
-    }
-
     .produto_foto_imagem {
-        height: 80%;
+        height: 60%;
         transition: none;
         width: 80%;
     }
 
     .produto_foto_imagem:hover {
-        height: 80%;
+        height: 60%;
         width: 80%;
     }
 
-    .produto_detalhes {
-        padding: 1em 0 0 0;
-        width: 100%;
-    }
-
-    .produto_detalhes_comprar {
-        align-self: center;
-        width: 20em;
+    .produto_detalhes_nome {
+        margin: 0;
     }
 
     /*Parte das tags do produto - Categorias*/
@@ -47,52 +35,49 @@
         width: calc(100% - 1em);
     }
 
-    .produto_tags_legenda {
-        width: auto;
-    }
-
-    .produto_tags_itens {
-        padding: 0.25em;
-    }
-
     .produto_tags_itens:hover {
         transform: none;
     }
 
     .produto_tags_link {
-        font-size: 0.8em;
         transition: none;
     }
 
     /*Parte da vitrine dos produtos similares*/
-
     .vitrine {
         height: auto;
-        margin: 1em 0;
-        width: 100%;
+        margin: 2em auto;
     }
 
     .vitrine_produtos {
-        gap: 2em;
-        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0 10%;
         height: auto;
-        margin-top: 2.5%;
     }
 
     .vitrine_card {
-        height: 30em;
-        margin: 0 auto;
+        height: 26.5em;
+        margin-bottom: 1em;
         max-width: 320px;
         overflow: visible;
         transition: none;
-        width: 70%;
+        width: calc(90% / 2);
     }
 
     .vitrine_card:hover {
         transform: none;
     }
 
+    .vitrine_card:hover .vitrine_card_botao {
+        transform: none;
+    }
+
+    .vitrine_card_preco {
+        font-size: 1.5em;
+    }
+
     .vitrine_card_botao {
+        padding: 1em 0.5em;
         opacity: 1;
         transform: none;
         width: calc(100% - 1em);

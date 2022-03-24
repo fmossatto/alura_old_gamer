@@ -4,24 +4,14 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Alura Old Gamer | Adicionar Produto</title>
+        <title>Alura Old Gamer | Todos os Produtos</title>
 
         <link rel="stylesheet" href="../styles/base.css" />
+        <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="../styles/header.css" />
         <link rel="stylesheet" href="../styles/header_celular.css" />
         <link rel="stylesheet" href="../styles/header_tablet.css" />
-        <link
-            rel="stylesheet"
-            href="../styles/pages_add_produto/add_produto.css"
-        />
-        <link
-            rel="stylesheet"
-            href="../styles/pages_add_produto/add_produto_celular.css"
-        />
-        <link
-            rel="stylesheet"
-            href="../styles/pages_add_produto/add_produto_tablet.css"
-        />
+        <link rel="stylesheet" href="../styles/pages_produtos/produtos.css" />
         <link rel="stylesheet" href="../styles/rodape.css" />
         <link rel="stylesheet" href="../styles/rodape_celular.css" />
         <link rel="stylesheet" href="../styles/rodape_tablet.css" />
@@ -58,58 +48,97 @@
             </div>
         </header>
 
-        <div class="container_principal">
-            <section class="add_produto">
-                <div class="add_produto_header">
-                    <h2 class="add_produto_titulo">Adicionar novo produto</h2>
-                </div>
-                <div class="add_produto_foto">
-                    <div class="add_produto_imagem_container">
+        <section class="container_principal">
+            <div class="produtos_header">
+                <h2 class="produtos_titulo">Todos os produtos</h2>
+                <a href="../pages/add_produto.html" class="produtos_cadastrar"
+                    >Adicionar Produto</a
+                >
+            </div>
+            <div class="vitrine">
+                <div class="vitrine_produtos">
+                    <div class="vitrine_card">
                         <img
-                            src="../assets/img/white_background.png"
-                            alt="adicionar nova imagem"
-                            class="add_produto_imagem"
+                            class="vitrine_card_imagem"
+                            src="../assets/img/produtos/console_ps3.png"
                         />
-                        <div class="add_produto_semImagem">
-                            <i
-                                class="fa-solid fa-image add_produto_imagem_icon"
-                            ></i>
-                            <p class="add_produto_imagem_info">
-                                Arraste para adicionar uma imagem para o produto
-                            </p>
-                            <p class="add_produto_imagem_infoMovel">
-                                Adicionar uma imagem para o produto
-                            </p>
+                        <p class="vitrine_card_nome">
+                            Playstation 3 Slim 160GB
+                        </p>
+                        <p class="vitrine_card_preco">R$ 450,00</p>
+                        <p class="vitrine_card_id">#1111</p>
+                        <div class="vitrine_card_botoesAcao">
+                            <button class="vitrine_card_excluir">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                            <button class="vitrine_card_editar">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
                         </div>
                     </div>
-                    <p class="add_produto_juncao">Ou</p>
-                    <button class="add_produto_procurar">
-                        Procure no seu computador
-                    </button>
-                </div>
 
-                <form class="add_produto_form">
-                    <input
-                        class="add_produto_nome"
-                        type="text"
-                        placeholder="Nome do produto"
-                    />
-                    <input
-                        class="add_produto_preco"
-                        type="number"
-                        placeholder="R$ 0,00"
-                    />
-                    <textarea
-                        class="add_produto_descricao"
-                        rows="5"
-                        placeholder="Descrição do produto"
-                    ></textarea>
-                    <button class="add_produto_submit">
-                        Adicionar Produto
-                    </button>
-                </form>
-            </section>
-        </div>
+                    <div class="vitrine_card">
+                        <img
+                            class="vitrine_card_imagem"
+                            src="../assets/img/produtos/console_ps3.png"
+                        />
+                        <p class="vitrine_card_nome">
+                            Playstation 3 Slim 160GB
+                        </p>
+                        <p class="vitrine_card_preco">R$ 450,00</p>
+                        <p class="vitrine_card_id">#1111</p>
+                        <div class="vitrine_card_botoesAcao">
+                            <button class="vitrine_card_excluir">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                            <button class="vitrine_card_editar">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="vitrine_card">
+                        <img
+                            class="vitrine_card_imagem"
+                            src="../assets/img/produtos/console_ps3.png"
+                        />
+                        <p class="vitrine_card_nome">
+                            Playstation 3 Slim 160GB
+                        </p>
+                        <p class="vitrine_card_preco">R$ 450,00</p>
+                        <p class="vitrine_card_id">#1111</p>
+                        <div class="vitrine_card_botoesAcao">
+                            <button class="vitrine_card_excluir">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                            <button class="vitrine_card_editar">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="vitrine_card">
+                        <img
+                            class="vitrine_card_imagem"
+                            src="../assets/img/produtos/console_ps3.png"
+                        />
+                        <p class="vitrine_card_nome">
+                            Playstation 3 Slim 160GB
+                        </p>
+                        <p class="vitrine_card_preco">R$ 450,00</p>
+                        <p class="vitrine_card_id">#1111</p>
+                        <div class="vitrine_card_botoesAcao">
+                            <button class="vitrine_card_excluir">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                            <button class="vitrine_card_editar">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer class="footer">
             <div class="footer_container">

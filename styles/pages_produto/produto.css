@@ -109,7 +109,7 @@
 .produto_tags_itens {
     background-color: var(--primaria);
     border-radius: 4px;
-    padding: 0.5em;
+    padding: 0.25em;
 }
 
 .produto_tags_itens:hover {
@@ -118,7 +118,7 @@
 
 .produto_tags_link {
     color: var(--branco);
-    font-size: 1em;
+    font-size: 0.8em;
     text-decoration: none;
     transition: 0.2s;
 }

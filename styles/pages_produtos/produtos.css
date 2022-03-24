@@ -1,0 +1,121 @@
+@import url("../variaveis.css");
+
+.container_principal {
+    background-color: var(--cinzaClaro);
+    padding-top: 2em;
+    width: 100%;
+}
+
+.produtos_header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.produtos_titulo {
+    margin: 0;
+    width: auto;
+}
+
+.produtos_cadastrar {
+    background-color: var(--primaria);
+    border: none;
+    color: var(--branco);
+    display: inline-block;
+    font-weight: 400;
+    padding: 1em;
+    transition: 0.2s;
+    text-align: center;
+    text-decoration: none;
+    width: 10em;
+}
+
+.produtos_cadastrar:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.vitrine {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    width: 75%;
+}
+
+.vitrine_produtos {
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 2em;
+}
+
+.vitrine_card {
+    background-color: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    padding: 0.5em;
+    width: calc(97% / 4);
+}
+
+.vitrine_card_imagem {
+    border-radius: 8px;
+    height: 55%;
+    margin: 0.25em auto;
+    max-width: 200px;
+    width: 80%;
+}
+
+.vitrine_card_nome {
+    color: var(--cinzaEscuro);
+    font-family: var(--rokkit);
+    font-size: 1em;
+    margin: 0;
+}
+
+.vitrine_card_preco {
+    font-family: var(--rokkit);
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.vitrine_card_id {
+    font-family: var(--rokkit);
+    font-size: 1em;
+    margin: 0;
+}
+
+.vitrine_card_botoesAcao {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+}
+
+.vitrine_card_excluir {
+    background-color: #f44336;
+    border-radius: 4px;
+    color: var(--branco);
+    cursor: pointer;
+    border: none;
+    height: 3em;
+    width: 48%;
+}
+
+.vitrine_card_editar {
+    background-color: var(--primaria);
+    border-radius: 4px;
+    color: var(--branco);
+    cursor: pointer;
+    border: none;
+    height: 3em;
+    width: 48%;
+}
