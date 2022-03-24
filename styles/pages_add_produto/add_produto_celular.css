@@ -1,0 +1,58 @@
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .add_produto {
+        margin: 0;
+        width: 100%;
+    }
+
+    .add_produto_header {
+        border-bottom: 1px dashed var(--preto);
+        margin-bottom: 2em;
+        text-align: center;
+        width: 75%;
+    }
+
+    /*Sessão da escolha da imagem*/
+
+    .add_produto_foto {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .add_produto_juncao {
+        display: none;
+    }
+
+    .add_produto_procurar {
+        display: none;
+    }
+
+    .add_produto_imagem_container {
+        width: 75%;
+    }
+
+    .add_produto_imagem_info {
+        display: none;
+    }
+
+    .add_produto_imagem_infoMovel {
+        display: inline;
+    }
+
+    /*Sessão do Formulário*/
+
+    .add_produto_form {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        height: auto;
+        margin-bottom: 2em;
+        width: 75%;
+    }
+
+    .add_produto_form > * {
+        font-family: var(--raleway);
+        font-size: 1em;
+    }
+}

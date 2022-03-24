@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alura Old Gamer | Adicionar Produto</title>
+
+        <link rel="stylesheet" href="../styles/base.css" />
+        <link rel="stylesheet" href="../styles/header.css" />
+        <link rel="stylesheet" href="../styles/header_celular.css" />
+        <link rel="stylesheet" href="../styles/header_tablet.css" />
+        <link
+            rel="stylesheet"
+            href="../styles/pages_add_produto/add_produto.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../styles/pages_add_produto/add_produto_celular.css"
+        />
+        <link rel="stylesheet" href="../styles/rodape.css" />
+        <link rel="stylesheet" href="../styles/rodape_celular.css" />
+        <link rel="stylesheet" href="../styles/rodape_tablet.css" />
+    </head>
+    <body>
+        <header class="header">
+            <!--Bloco do Header --- contém toda a parte do cabeçalho-->
+            <div class="header_container_direita">
+                <div class="header_logo">
+                    <a href="../index.html"
+                        ><img src="../assets/img/logo1.svg" alt="icone da logo"
+                    /></a>
+                </div>
+                <div class="header_pesquisa">
+                    <div class="header_pesquisa_container">
+                        <input
+                            type="text"
+                            placeholder="O que deseja encontrar?"
+                        />
+                        <img
+                            src="../assets/img/search.svg"
+                            alt="icone de lupa"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="header_login">
+                <a href="./login.html" class="header_login_button"
+                    >Menu Administrador</a
+                >
+            </div>
+            <div class="header_pesquisa_responsivo">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </header>
+
+        <div class="container_principal">
+            <section class="add_produto">
+                <div class="add_produto_header">
+                    <h2 class="add_produto_titulo">Adicionar novo produto</h2>
+                </div>
+                <div class="add_produto_foto">
+                    <div class="add_produto_imagem_container">
+                        <img
+                            src="../assets/img/white_background.png"
+                            alt="adicionar nova imagem"
+                            class="add_produto_imagem"
+                        />
+                        <div class="add_produto_semImagem">
+                            <i
+                                class="fa-solid fa-image add_produto_imagem_icon"
+                            ></i>
+                            <p class="add_produto_imagem_info">
+                                Arraste para adicionar uma imagem para o produto
+                            </p>
+                            <p class="add_produto_imagem_infoMovel">
+                                Adicionar uma imagem para o produto
+                            </p>
+                        </div>
+                    </div>
+                    <p class="add_produto_juncao">Ou</p>
+                    <button class="add_produto_procurar">
+                        Procure no seu computador
+                    </button>
+                </div>
+
+                <form class="add_produto_form">
+                    <input
+                        class="add_produto_nome"
+                        type="text"
+                        placeholder="Nome do produto"
+                    />
+                    <input
+                        class="add_produto_preco"
+                        type="number"
+                        placeholder="R$ 0,00"
+                    />
+                    <textarea
+                        class="add_produto_descricao"
+                        rows="5"
+                        placeholder="Descrição do produto"
+                    ></textarea>
+                    <button class="add_produto_submit">
+                        Adicionar Produto
+                    </button>
+                </form>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="footer_sobre">
+                    <div class="footer_sobre_midia">
+                        <img
+                            class="footer_logo"
+                            src="../assets/img/logo1.svg"
+                            alt="icone da logo"
+                        />
+                        <div class="footer_social">
+                            <p>facebook</p>
+                            <p>instagram</p>
+                            <p>twitter</p>
+                        </div>
+                    </div>
+                    <!--Fim footer midias digitais-->
+                    <div class="footer_sobre_quemSomos">
+                        <p>
+                            Somos focados no varejo de produtos destinados a
+                            gamers de coração e de profissão, temos todos os
+                            tipos de periféricos e dispositivos que
+                            complementarão sua experiência com os games. Também
+                            temos consoles e jogos de todas as gerações,
+                            contemplando os primórdios da era do Atari 2600 e
+                            Odyssey, até os dias modernos com Playstation 5 e
+                            Xbox Series. Qualquer dúvida, crítica ou sugestão,
+                            disponibilizamos nossos canais para melhor
+                            atendermos nossos clientes, fiquem a vontade para
+                            entrar em contato conosco
+                            <span class="footer_sobre_destaque"
+                                >e que a diversão nunca acabe.</span
+                            >
+                        </p>
+                    </div>
+                    <!--Fim footer quem somos-->
+                </div>
+                <!--Fim footer Sobre a empresa-->
+
+                <div class="footer_contato">
+                    <h2 class="footer_contato_header">Fale Conosco</h2>
+                    <form action="#" class="footer_contato_formulario">
+                        <input
+                            class="footer_contato_formulario_nome"
+                            type="text"
+                            placeholder="Digite seu nome"
+                        />
+                        <textarea
+                            class="footer_contato_formulario_mensagem"
+                            rows="5"
+                            placeholder="Digite sua mensagem"
+                        ></textarea>
+                        <button
+                            type="submit"
+                            class="footer_contato_formulario_submit"
+                        >
+                            Enviar mensagem
+                        </button>
+                    </form>
+                </div>
+                <!--Fim footer contato-->
+            </div>
+            <!--fim do footer container-->
+
+            <div class="dev">
+                <a
+                    href="https://www.linkedin.com/in/fernando-mossatto/"
+                    target="blank"
+                >
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <p>Desenvolvido por Fmossatto</p>
+                <p>2022</p>
+            </div>
+        </footer>
+
+        <script
+            src="https://kit.fontawesome.com/5f5592f0e5.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

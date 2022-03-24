@@ -11,13 +11,14 @@
         height: 2.5em;
     }
 
-    .header_pesquisa_container{
+    .header_pesquisa_container {
         display: none;
     }
 
-    .header_login_button{
+    .header_login_button {
         padding: 0.5em;
-        width: 7em;
+        min-width: 7em;
+        width: auto;
     }
 
     .header_pesquisa_responsivo {
@@ -25,5 +26,5 @@
         cursor: pointer;
         display: inline-block;
         font-size: 1.5em;
-      }
-  }
+    }
+}
