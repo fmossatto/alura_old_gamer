@@ -7,14 +7,11 @@ O challenge consiste em realizar 4 desafios divido em 4 semanas.
 :calendar: Semana 01 - :white_check_mark:
 Criar a página principal do projeto apenas usando HTML e CSS, e implementando também o design responsivo para celular e tablets.
 
-:calendar: Semana 02 - :red_circle:
-Ainda não disponibilizado
+:calendar: Semana 02 - :white_check_mark:
+Criar a página de login, criar a página de descrição do produto contendo os detalhes do produto e produtos similares, criar a página para adicionar novos produtos além de criar a página para listar todos os produtos cadastrados. Todas as páginas devem conter um design responsivo para celulares e tablets.
 
-:calendar: Semana 03 - :red_circle:
-Ainda não disponibilizado
-
-:calendar: Semana 04 - :red_circle:
-Ainda não disponibilizado
+:calendar: Semana 03 e 04 - :red_circle:
+Focada em javascript, as duas últimas semanas tem o desafio de popular as páginas com dados dinâmicos, buscando as informações de alguma fonte externa, ficando a critério do participante escolher entre back ends reais ou fakes (como o json server). Os últimos desafios tem como proposta também a validação dos formulários contidos nas páginas.
 
 # O Caminho até agora :chart_with_upwards_trend:
 
@@ -29,5 +26,19 @@ tomei a liberdade de mudar o layout do projeto mas sem comprometer o princípio 
 -   Mudei o rodapé das páginas;
 -   Criei um logo diferente;
 -   usei imagens diferente das disponibilizadas;
+
+## Semana 02
+
+Assim como na semana 01, também mudei um pouco o layout proposto pelo desafio.
+
+* Mudei o layout da página que lista todos os produtos, adicionando alguns elementos visuais;
+
+* Adicionei a sessão de tags na página do produto, ilustrando as categorias do produto em destaque;
+
+* Adicionei um efeito de zoom na imagem do produto, para melhor visualização;
+
+* Quanto as funcionalidades das páginas, segui o proposto pelo desafiio;
+
+  
 
 [Link do Guithub pages do projeto](https://fmossatto.github.io/alura_old_gamer/)

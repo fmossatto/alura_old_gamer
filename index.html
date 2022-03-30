@@ -1,357 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Alura Old Gamer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Old Gamer</title>
 
-        <link rel="stylesheet" href="./styles/base.css" />
-        <link rel="stylesheet" href="./styles/header.css" />
-        <link rel="stylesheet" href="./styles/header_celular.css" />
-        <link rel="stylesheet" href="./styles/header_tablet.css" />
-        <link rel="stylesheet" href="./styles/destaques.css" />
-        <link rel="stylesheet" href="./styles/destaques_celular.css" />
-        <link rel="stylesheet" href="./styles/index_main_tablet.css" />
-        <link rel="stylesheet" href="./styles/index_main.css" />
-        <link rel="stylesheet" href="./styles/index_main_celular.css" />
-        <link rel="stylesheet" href="./styles/index_main_tablet.css" />
-        <link rel="stylesheet" href="./styles/rodape.css" />
-        <link rel="stylesheet" href="./styles/rodape_celular.css" />
-        <link rel="stylesheet" href="./styles/rodape_tablet.css" />
-    </head>
-    <body>
-        <div class="container_principal">
-            <header class="header">
-                <!--Bloco do Header --- contém toda a parte do cabeçalho-->
-                <div class="header_container_direita">
-                    <div class="header_logo">
-                        <a href="./index.html"
-                            ><img
-                                src="./assets/img/logo1.svg"
-                                alt="icone da logo"
-                        /></a>
-                    </div>
-                    <div class="header_pesquisa">
-                        <div class="header_pesquisa_container">
-                            <input
-                                type="text"
-                                placeholder="O que deseja encontrar?"
-                            />
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="header_login">
-                    <a href="./pages/login.html" class="header_login_button"
-                        >Login</a
-                    >
-                </div>
-                <div class="header_pesquisa_responsivo">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </header>
-
-            <!--Fim do Header - Cabeçalho-->
-
-            <section class="destaques">
-                <!--Bloco de destaques --- contém o banner principal-->
-                <div class="destaques_container">
-                    <h2 class="destaques_titulo">Promoção Inaugural</h2>
-                    <p class="destaques_descricao">
-                        Venha comemorar a nossa inauguração economizando 30% em
-                        qualquer controle
-                    </p>
-                    <button class="destaques_botao">Ver produtos</button>
-                </div>
-            </section>
-
-            <!--Fim da sessão destaques-->
-
-            <section class="main">
-                <!--Bloco de produtos-->
-                <div class="main_container">
-                    <div class="vitrine">
-                        <div class="vitrine_header">
-                            <h2 class="vitrine_titulo">Lançamentos</h2>
-                            <p class="vitrine_descricao">
-                                Todos os dias novidades para você
-                            </p>
-                        </div>
-                        <div class="vitrine_produtos">
-                            <div class="vitrine_card">
-                                <img
-                                    class="vitrine_card_imagem"
-                                    src="./assets/img/produtos/controle_ps4.png"
-                                />
-                                <p class="vitrine_card_nome">
-                                    DualShock 4 Para Playstation 4
-                                </p>
-                                <p class="vitrine_card_preco">R$ 275,00</p>
-                                <button class="vitrine_card_botao">
-                                    <a href="pages/produto.html">Veja o produto</a>
-                                </buttonhref=>
-                            </div>
-
-                            <div class="vitrine_card">
-                                <img
-                                    class="vitrine_card_imagem"
-                                    src="./assets/img/produtos/Jogo_gtav.png"
-                                />
-                                <p class="vitrine_card_nome">
-                                    GTA V para Playstation 4
-                                </p>
-                                <p class="vitrine_card_preco">R$ 112,00</p>
-                                <button class="vitrine_card_botao">
-                                    Veja o produto
-                                </button>
-                            </div>
-
-                            <div class="vitrine_card">
-                                <img
-                                    class="vitrine_card_imagem"
-                                    src="./assets/img/produtos/portatil_3ds.png"
-                                />
-                                <p class="vitrine_card_nome">
-                                    New Nintendo 3DS XL
-                                </p>
-                                <p class="vitrine_card_preco">R$ 755,00</p>
-                                <button class="vitrine_card_botao">
-                                    Veja o produto
-                                </button>
-                            </div>
-
-                            <div class="vitrine_card">
-                                <img
-                                    class="vitrine_card_imagem"
-                                    src="./assets/img/produtos/outros_amiibo_animal.png"
-                                />
-                                <p class="vitrine_card_nome">
-                                    Amiibo Animal Crossing
-                                </p>
-                                <p class="vitrine_card_preco">R$ 45,00</p>
-                                <button class="vitrine_card_botao">
-                                    Veja o produto
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Fim da primeira vitrine de produtos-->
-
-                    <div class="vitrine">
-                        <div class="vitrine_header">
-                            <h2 class="vitrine_titulo">Consoles</h2>
-                            <p class="vitrine_descricao">
-                                Temos diversão para todos os gostos
-                            </p>
-                        </div>
-                        <div class="vitrine_produtos">
-                            <div class="vitrine_card">
-                                <img
-                                    class="vitrine_card_imagem"
-                                    src="./assets/img/produtos/console_ps3.png"
-                                />
-                                <p class="vitrine_card_nome">
-                                    Playstation 3 Slim 160GB
-                                </p>
-                                <p class="vitrine_card_preco">R$ 450,00</p>
-                                <button class="vitrine_card_botao">
-                                    Veja o produto
-                                </button>
-                            </div>
-
-                            <div class="vitrine_card">
-                                <img
-                                    class="vitrine_card_imagem"
-                                    src="./assets/img/produtos/console.snes.png"
-                                />
-                                <p class="vitrine_card_nome">Super Nintendo</p>
-                                <p class="vitrine_card_preco">R$ 238,00</p>
-                                <button class="vitrine_card_botao">
-                                    Veja o produto
-                                </button>
-                            </div>
-
-                            <div class="vitrine_card">
-                                <img
-                                    class="vitrine_card_imagem"
-                                    src="./assets/img/produtos/console.md.png"
-                                />
-                                <p class="vitrine_card_nome">Mega Drive 3</p>
-                                <p class="vitrine_card_preco">R$ 185,00</p>
-                                <button class="vitrine_card_botao">
-                                    Veja o produto
-                                </button>
-                            </div>
-
-                            <div class="vitrine_card">
-                                <img
-                                    class="vitrine_card_imagem"
-                                    src="./assets/img/produtos/console_nes.png"
-                                />
-                                <p class="vitrine_card_nome">Nintendinho</p>
-                                <p class="vitrine_card_preco">R$ 349,00</p>
-                                <button class="vitrine_card_botao">
-                                    Veja o produto
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Fim da segunda vitrine de produtos-->
-
-                    <div class="vitrine">
-                        <div class="vitrine_header">
-                            <h2 class="vitrine_titulo">Diversos</h2>
-                            <p class="vitrine_descricao">
-                                Senão é video game que você procura, temos
-                                também.
-                            </p>
-                        </div>
-                        <div class="vitrine_produtos">
-                            <div class="vitrine_card">
-                                <img
-                                    class="vitrine_card_imagem"
-                                    src="./assets/img/produtos/outros_amiibo_animal.png"
-                                />
-                                <p class="vitrine_card_nome">
-                                    Amiibo Animal Crossing
-                                </p>
-                                <p class="vitrine_card_preco">R$ 45,00</p>
-                                <button class="vitrine_card_botao">
-                                    Veja o produto
-                                </button>
-                            </div>
-
-                            <div class="vitrine_card">
-                                <img
-                                    class="vitrine_card_imagem"
-                                    src="./assets/img/produtos/outros_headphone.png"
-                                />
-                                <p class="vitrine_card_nome">
-                                    Headphone Beats Vermelho
-                                </p>
-                                <p class="vitrine_card_preco">R$ 211,00</p>
-                                <button class="vitrine_card_botao">
-                                    Veja o produto
-                                </button>
-                            </div>
-
-                            <div class="vitrine_card">
-                                <img
-                                    class="vitrine_card_imagem"
-                                    src="./assets/img/produtos/outros_mousepad.png"
-                                />
-                                <p class="vitrine_card_nome">Mousepad Razer</p>
-                                <p class="vitrine_card_preco">R$ 118,00</p>
-                                <button class="vitrine_card_botao">
-                                    Veja o produto
-                                </button>
-                            </div>
-
-                            <div class="vitrine_card">
-                                <img
-                                    class="vitrine_card_imagem"
-                                    src="./assets/img/produtos/outros_poster.png"
-                                />
-                                <p class="vitrine_card_nome">
-                                    Poster Street Fighter V - 60 x 96
-                                </p>
-                                <p class="vitrine_card_preco">R$ 49,00</p>
-                                <button class="vitrine_card_botao">
-                                    Veja o produto
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Fim da terceira vitrine de produtos-->
-                </div>
-            </section>
-
-            <!--Fim da sessão Main-->
-
-            <footer class="footer">
-                <div class="footer_container">
-                    <div class="footer_sobre">
-                        <div class="footer_sobre_midia">
-                            <img
-                                class="footer_logo"
-                                src="./assets/img/logo1.svg"
-                                alt="icone da logo"
-                            />
-                            <div class="footer_social">
-                                <a href="./pages/add_produto.html">Facebook</a>
-                                <a href="#">instagram</a>
-                                <a href="#">twitter</a>
-                            </div>
-                        </div>
-                        <!--Fim footer midias digitais-->
-                        <div class="footer_sobre_quemSomos">
-                            <p>
-                                Somos focados no varejo de produtos destinados a
-                                gamers de coração e de profissão, temos todos os
-                                tipos de periféricos e dispositivos que
-                                complementarão sua experiência com os games.
-                                Também temos consoles e jogos de todas as
-                                gerações, contemplando os primórdios da era do
-                                Atari 2600 e Odyssey, até os dias modernos com
-                                Playstation 5 e Xbox Series. Qualquer dúvida,
-                                crítica ou sugestão, disponibilizamos nossos
-                                canais para melhor atendermos nossos clientes,
-                                fiquem a vontade para entrar em contato conosco
-                                <span class="footer_sobre_destaque"
-                                    >e que a diversão nunca acabe.</span
-                                >
-                            </p>
-                        </div>
-                        <!--Fim footer quem somos-->
-                    </div>
-                    <!--Fim footer Sobre a empresa-->
-
-                    <div class="footer_contato">
-                        <h2 class="footer_contato_header">Fale Conosco</h2>
-                        <form action="#" class="footer_contato_formulario">
-                            <input
-                                class="footer_contato_formulario_nome"
-                                type="text"
-                                placeholder="Digite seu nome"
-                            />
-                            <textarea
-                                class="footer_contato_formulario_mensagem"
-                                rows="5"
-                                placeholder="Digite sua mensagem"
-                            ></textarea>
-                            <button
-                                type="submit"
-                                class="footer_contato_formulario_submit"
-                            >
-                                Enviar mensagem
-                            </button>
-                        </form>
-                    </div>
-                    <!--Fim footer contato-->
-                </div>
-                <!--fim do footer container-->
-
-                <div class="dev">
-                    <a
-                        href="https://www.linkedin.com/in/fernando-mossatto/"
-                        target="blank"
-                    >
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-
-                    <p>Desenvolvido por Fmossatto</p>
-                    <p>2022</p>
-                </div>
-            </footer>
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/header_celular.css" />
+    <link rel="stylesheet" href="./styles/header_tablet.css" />
+    <link rel="stylesheet" href="./styles/destaques.css" />
+    <link rel="stylesheet" href="./styles/destaques_celular.css" />
+    <link rel="stylesheet" href="./styles/index_main_tablet.css" />
+    <link rel="stylesheet" href="./styles/index_main.css" />
+    <link rel="stylesheet" href="./styles/index_main_celular.css" />
+    <link rel="stylesheet" href="./styles/index_main_tablet.css" />
+    <link rel="stylesheet" href="./styles/rodape.css" />
+    <link rel="stylesheet" href="./styles/rodape_celular.css" />
+    <link rel="stylesheet" href="./styles/rodape_tablet.css" />
+  </head>
+  <body>
+    <div class="container_principal">
+      <header class="header">
+        <!--Bloco do Header --- contém toda a parte do cabeçalho-->
+        <div class="header_container_direita">
+          <div class="header_logo">
+            <a href="./index.html"
+              ><img src="./assets/img/logo1.svg" alt="icone da logo"
+            /></a>
+          </div>
+          <div class="header_pesquisa">
+            <div class="header_pesquisa_container">
+              <input type="text" placeholder="O que deseja encontrar?" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
         </div>
+        <div class="header_login">
+          <a href="./pages/login.html" class="header_login_button">Login</a>
+        </div>
+        <div class="header_pesquisa_responsivo">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </header>
 
-        <script
-            src="https://kit.fontawesome.com/5f5592f0e5.js"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+      <!--Fim do Header - Cabeçalho-->
+
+      <section class="destaques">
+        <!--Bloco de destaques --- contém o banner principal-->
+        <div class="destaques_container">
+          <h2 class="destaques_titulo">Promoção Inaugural</h2>
+          <p class="destaques_descricao">
+            Venha comemorar a nossa inauguração economizando 30% em qualquer
+            controle
+          </p>
+          <a href="#vitrine_consoles" class="destaques_botao">Ver produtos</a>
+        </div>
+      </section>
+
+      <!--Fim da sessão destaques-->
+
+      <section class="main">
+        <!--Bloco de produtos-->
+        <div class="main_container">
+          <!--sessão vitrine lançamentos-->
+          <div class="vitrine">
+            <div class="vitrine_header">
+              <h2 class="vitrine_titulo">Lançamentos</h2>
+              <p class="vitrine_descricao">Todos os dias novidades para você</p>
+            </div>
+            <div class="vitrine_produtos" data-vitrineLancamentos></div>
+          </div>
+
+          <!--Fim da vitrine lançamentos-->
+
+          <div id="vitrine_consoles" class="vitrine">
+            <div class="vitrine_header">
+              <h2 class="vitrine_titulo">Consoles</h2>
+              <p class="vitrine_descricao">
+                Temos diversão para todos os gostos
+              </p>
+            </div>
+            <div class="vitrine_produtos" data-vitrineConsoles></div>
+          </div>
+
+          <!--Fim da segunda vitrine de produtos-->
+
+          <div class="vitrine">
+            <div class="vitrine_header">
+              <h2 class="vitrine_titulo">Diversos</h2>
+              <p class="vitrine_descricao">
+                Senão é video game que você procura, temos também.
+              </p>
+            </div>
+            <div class="vitrine_produtos" data-vitrineDiversos></div>
+          </div>
+
+          <!--Fim da terceira vitrine de produtos-->
+        </div>
+      </section>
+
+      <!--Fim da sessão Main-->
+
+      <footer class="footer">
+        <div class="footer_container">
+          <div class="footer_sobre">
+            <div class="footer_sobre_midia">
+              <img
+                class="footer_logo"
+                src="./assets/img/logo1.svg"
+                alt="icone da logo"
+              />
+              <div class="footer_social">
+                <a href="./pages/add_produto.html">Facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+              </div>
+            </div>
+            <!--Fim footer midias digitais-->
+            <div class="footer_sobre_quemSomos">
+              <p>
+                Somos focados no varejo de produtos destinados a gamers de
+                coração e de profissão, temos todos os tipos de periféricos e
+                dispositivos que complementarão sua experiência com os games.
+                Também temos consoles e jogos de todas as gerações, contemplando
+                os primórdios da era do Atari 2600 e Odyssey, até os dias
+                modernos com Playstation 5 e Xbox Series. Qualquer dúvida,
+                crítica ou sugestão, disponibilizamos nossos canais para melhor
+                atendermos nossos clientes, fiquem a vontade para entrar em
+                contato conosco
+                <span class="footer_sobre_destaque"
+                  >e que a diversão nunca acabe.</span
+                >
+              </p>
+            </div>
+            <!--Fim footer quem somos-->
+          </div>
+          <!--Fim footer Sobre a empresa-->
+
+          <div class="footer_contato">
+            <h2 class="footer_contato_header">Fale Conosco</h2>
+            <form action="#" class="footer_contato_formulario">
+              <input
+                class="footer_contato_formulario_nome"
+                type="text"
+                placeholder="Digite seu nome"
+              />
+              <textarea
+                class="footer_contato_formulario_mensagem"
+                rows="5"
+                placeholder="Digite sua mensagem"
+              ></textarea>
+              <button type="submit" class="footer_contato_formulario_submit">
+                Enviar mensagem
+              </button>
+            </form>
+          </div>
+          <!--Fim footer contato-->
+        </div>
+        <!--fim do footer container-->
+
+        <div class="dev">
+          <a
+            href="https://www.linkedin.com/in/fernando-mossatto/"
+            target="blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <p>Desenvolvido por Fmossatto</p>
+          <p>2022</p>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/5f5592f0e5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="module"
+      src="./controllers/controllerListaProdutos.js"
+    ></script>
+  </body>
 </html>

@@ -1,49 +1,48 @@
-@import url('./variaveis.css');
+@import url("./variaveis.css");
 
 .destaques {
-    align-items: center;
-    background-image: url('../assets/img/controles.png');
-    background-position:right;
-    background-color: var(--primaria);
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 22em;
-    width: 100%;
+  align-items: center;
+  background-image: url("../assets/img/controles.png");
+  background-position: right;
+  background-color: var(--primaria);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 22em;
+  width: 100%;
 }
 
 .destaques_container {
-    color: var(--branco);
-    height: 65%;
-    margin-bottom: 2em;
-    max-width: 1200px;
-    width: 75%;
+  color: var(--branco);
+  height: 65%;
+  margin-bottom: 2em;
+  max-width: 1200px;
+  width: 75%;
 }
 
-.destaques_titulo{
-    font-size: 3em;
-
+.destaques_titulo {
+  font-size: 3em;
 }
 
-.destaques_descricao{
-    font-size: 1.2em;
-    font-weight: 700;
+.destaques_descricao {
+  font-size: 1.2em;
+  font-weight: 700;
 }
 
 .destaques_botao {
-    background-color: transparent;
-    cursor: pointer;
-    border: 1px solid #fff;
-    color: var(--branco);
-    font-weight: 700;
-    padding: 1em;
-    transition: 0.2s;
-    width: 10em;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #fff;
+  color: var(--branco);
+  font-weight: 700;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  transition: 0.2s;
+  width: 10em;
 }
 
 .destaques_botao:hover {
-    background-color: var(--branco);
-    color: var(--primaria);
-
+  background-color: var(--branco);
+  color: var(--primaria);
 }
