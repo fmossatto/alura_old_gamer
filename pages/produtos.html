@@ -7,7 +7,6 @@
         <title>Alura Old Gamer | Todos os Produtos</title>
 
         <link rel="stylesheet" href="../styles/base.css" />
-        <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="../styles/header.css" />
         <link rel="stylesheet" href="../styles/header_celular.css" />
         <link rel="stylesheet" href="../styles/header_tablet.css" />
@@ -56,8 +55,8 @@
                 >
             </div>
             <div class="vitrine">
-                <div class="vitrine_produtos">
-                    <div class="vitrine_card">
+                <div class="vitrine_produtos" data-vitrineTodosProdutos>
+                    <!--<div class="vitrine_card">
                         <img
                             class="vitrine_card_imagem"
                             src="../assets/img/produtos/console_ps3.png"
@@ -156,15 +155,10 @@
                             </button>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="vitrine">
-                <div class="vitrine_produtos">
                     <div class="vitrine_card">
                         <img
                             class="vitrine_card_imagem"
-                            src="../assets/img/produtos/controle_game_cube.png"
+                            src="../assets/img/produtos/console_ps4.png"
                         />
                         <p class="vitrine_card_nome">
                             Playstation 3 Slim 160GB
@@ -180,87 +174,7 @@
                             </button>
                         </div>
                     </div>
-
-                    <div class="vitrine_card">
-                        <img
-                            class="vitrine_card_imagem"
-                            src="../assets/img/produtos/controle_ps4.png"
-                        />
-                        <p class="vitrine_card_nome">
-                            Playstation 3 Slim 160GB
-                        </p>
-                        <p class="vitrine_card_preco">R$ 450,00</p>
-                        <p class="vitrine_card_id">#1111</p>
-                        <div class="vitrine_card_botoesAcao">
-                            <button class="vitrine_card_excluir">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                            <button class="vitrine_card_editar">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="vitrine_card">
-                        <img
-                            class="vitrine_card_imagem"
-                            src="../assets/img/produtos/Jogo_gtav.png"
-                        />
-                        <p class="vitrine_card_nome">
-                            Playstation 3 Slim 160GB
-                        </p>
-                        <p class="vitrine_card_preco">R$ 450,00</p>
-                        <p class="vitrine_card_id">#1111</p>
-                        <div class="vitrine_card_botoesAcao">
-                            <button class="vitrine_card_excluir">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                            <button class="vitrine_card_editar">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="vitrine_card">
-                        <img
-                            class="vitrine_card_imagem"
-                            src="../assets/img/produtos/outros_amiibo_animal.png"
-                        />
-                        <p class="vitrine_card_nome">
-                            Playstation 3 Slim 160GB
-                        </p>
-                        <p class="vitrine_card_preco">R$ 450,00</p>
-                        <p class="vitrine_card_id">#1111</p>
-                        <div class="vitrine_card_botoesAcao">
-                            <button class="vitrine_card_excluir">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                            <button class="vitrine_card_editar">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="vitrine_card">
-                        <img
-                            class="vitrine_card_imagem"
-                            src="../assets/img/produtos/outros_headphone.png"
-                        />
-                        <p class="vitrine_card_nome">
-                            Playstation 3 Slim 160GB
-                        </p>
-                        <p class="vitrine_card_preco">R$ 450,00</p>
-                        <p class="vitrine_card_id">#1111</p>
-                        <div class="vitrine_card_botoesAcao">
-                            <button class="vitrine_card_excluir">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                            <button class="vitrine_card_editar">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                </div>-->
             </div>
         </section>
 
@@ -343,6 +257,10 @@
         <script
             src="https://kit.fontawesome.com/5f5592f0e5.js"
             crossorigin="anonymous"
+        ></script>
+        <script
+            type="module"
+            src="../controllers/controllerTodosProdutos.js"
         ></script>
     </body>
 </html>

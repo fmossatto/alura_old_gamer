@@ -1,84 +1,126 @@
 {
-  "produtos": [
-    {
-      "nome": "DualShock 4 - Para Playstation 4",
-      "descricao": "Revolucionário, intuitivo e preciso: o controle sem fio DualShock®4 para o sistema PlayStation®4 define esta geração de jogos, combinando recursos revolucionários e conforto com controles precisos e intuitivos. Controle preciso: o toque, formato e a sensibilidade dos controles analógicos e botões com gatilho do DualShock®4 oferecem aos jogadores conforto e controle absolutos em todos os jogos para PlayStation®4.",
-      "preco": 275,
-      "imagem": "../assets/img/produtos/controle_ps4.png",
-      "categoria": "controles",
-      "id": 1
-    },
-    {
-      "nome": "Headphone Beats Vermelho",
-      "descricao": "O headphone beats vermelho leva a você o som premiado da Beats. Ele proporciona uma acústica perfeitamente adinada, que maximiza a nitidez, a amplitude e o equilíbrio do som",
-      "preco": 211.0,
-      "imagem": "../assets/img/produtos/outros_headphone.png",
-      "categoria": "outros",
-      "id": 2
-    },
-    {
-      "nome": "Super Nintendo",
-      "descricao": "O Super Nintendo Entertainment System (Super NES, SNES ou Super Nintendo) é um console de videogame de 16 bits desenvolvido pela Nintendo que foi lançado em 1990 no Japão, 1991 nos Estados Unidos, 1992 na Europa e Australásia (Oceania) e América do Sul em 1993.",
-      "preco": 238.0,
-      "imagem": "../assets/img/produtos/console.snes.png",
-      "categoria": "consoles",
-      "id": 3
-    },
-    {
-      "nome": "GTA V para Playstation 4",
-      "descricao": "Entre nas vidas de três criminosos muito diferentes, Michael, Franklin e Trevor, enquanto eles arriscam tudo em uma série de assaltos ousados que podem garantir o resto de suas vidas. Explore o deslumbrante mundo de Los Santos e Blaine County na experiência definitiva de Grand Theft Auto V, apresentando amplas atualizações e melhorias técnicas tanto para jogadores novos quanto para os que estão retornando. Além de distâncias maiores de renderização e melhor resolução, os jogadores podem esperar diversas adições e melhorias.",
-      "preco": 112.0,
-      "imagem": "../assets/img/produtos/jogo_gtav.png",
-      "categoria": "jogos",
-      "id": 4
-    },
-    {
-      "nome": "Playstation 3 Slim 160GB",
-      "descricao": "Com seu console PlayStation 3 você terá entretenimento garantido todos os dias. Sua tecnologia foi criada para colocar desafios para jogadores novatos e especialistas. Você não só poderá baixar os melhores videogames e navegar na web sem limites, mas graças à sua interconectividade global, também poderá competir online com seus amigos e pessoas de todo o mundo desfrutando de aventuras inesquecíveis.",
-      "preco": 450,
-      "imagem": "../assets/img/produtos/console_ps3.png",
-      "categoria": "consoles",
-      "id": 5
-    },
-    {
-      "nome": "Amiibo Animal Crossing",
-      "descricao": "Amiibos Não São Bonecos De Ação, Eles Não Se Mexem E Não Servem Para Brincar, São Mais Como Miniaturas De Enfeite. Sua Base, No Entanto, Utiliza Tecnologia De Comunicação A Curta Distância, Nfc (Near-Field Communication), A Qual Permite Que Ele Se Comunique Com Outros Aparelhos Eletrônicos Através Da Proximidade. Na Prática Basta Aproximar O Boneco De Uma Certa Parte Do Controle Game Pad Do Nintendo Wii U Para Que O Jogo Possa Ler As Informações Nele. Aproxime O Boneco No Controle E O Personagem Poderá Surgir Na Tela.",
-      "preco": 45,
-      "imagem": "../assets/img/produtos/outros_amiibo_animal.png",
-      "categoria": "outros",
-      "id": 6
-    },
-    {
-      "nome": "Mega Drive 3",
-      "descricao": "Conhecido como Sega Genesis na América do Norte, é um console de video game de 16 bits da Sega que concorria diretamente com o Super Nintendo Entertainment System. O console fez grande sucesso na década de 1990, perdendo espaço após o surgimento e popularização da nova geração de consoles de 32 bits, como o PlayStation da Sony. ",
-      "preco": 185,
-      "imagem": "../assets/img/produtos/console.md.png",
-      "categoria": "consoles",
-      "id": 7
-    },
-    {
-      "nome": "Mousepad Razer",
-      "descricao": "Está em busca de um mousepad gamer radical e de alto padrão de qualidade, que, além de lindo, sincronize e harmonize de forma perfeita com todos os seus periféricos e produtos Razer? Então, o Razer Goliathus Chroma é ideal para você! Este mousepad Razer é muito diferenciado. Flexível, intenso, com ótimo desempenho para o mouse gamer, ideal para quem quer ultra speed ou controle rigoroso nas jogadas, este mousepad é tudo o que você poderia desejar para o aprimoramento definitivo do seu estilo de jogo.",
-      "preco": 118,
-      "imagem": "../assets/img/produtos/outros_mousepad.png",
-      "categoria": "outros",
-      "id": 8
-    },
-    {
-      "nome": "Nintendinho",
-      "descricao": "O Nintendo Entertainment System (NES, popularmente chamado de Nintendinho no Brasil) é um console de videogame de 8 bits lançado pela Nintendo na América do Norte, Europa, Ásia, Austrália e Brasil. Originalmente lançado no Japão em 1983 com o nome de Nintendo Family Computer, Family Computer, ou apenas Famicom, o sistema foi redesenhado e recebeu o novo nome para ser lançado no mercado americano em 1985.",
-      "preco": 349,
-      "imagem": "../assets/img/produtos/console_nes.png",
-      "categoria": "consoles",
-      "id": 9
-    },
-    {
-      "nome": "Poster Street Fighter V - 60 x 96",
-      "descricao": "Os quadros possuem moldura em madeira ecológica e reflorestada, com pintura fosca. As molduras estão disponíveis nas cores preto e branco, dando aspecto minimalista e design refinado ao ambiente. Todos os quadros com moldura já acompanham ganchos de suporte para pendurar na parede. Basta por um parafuso na parede e encaixar o quadro.",
-      "preco": 49,
-      "imagem": "../assets/img/produtos/outros_poster.png",
-      "categoria": "outros",
-      "id": 10
-    }
-  ]
+    "produtos": [
+        {
+            "nome": "DualShock 4 - Para Playstation 4",
+            "descricao": "Revolucionário, intuitivo e preciso: o controle sem fio DualShock®4 para o sistema PlayStation®4 define esta geração de jogos, combinando recursos revolucionários e conforto com controles precisos e intuitivos. Controle preciso: o toque, formato e a sensibilidade dos controles analógicos e botões com gatilho do DualShock®4 oferecem aos jogadores conforto e controle absolutos em todos os jogos para PlayStation®4.",
+            "preco": 275,
+            "imagem": "../assets/img/produtos/controle_ps4.png",
+            "categoria": "controles",
+            "id": 1
+        },
+        {
+            "nome": "Headphone Beats Vermelho",
+            "descricao": "O headphone beats vermelho leva a você o som premiado da Beats. Ele proporciona uma acústica perfeitamente adinada, que maximiza a nitidez, a amplitude e o equilíbrio do som",
+            "preco": 211.0,
+            "imagem": "../assets/img/produtos/outros_headphone.png",
+            "categoria": "outros",
+            "id": 2
+        },
+        {
+            "nome": "Super Nintendo",
+            "descricao": "O Super Nintendo Entertainment System (Super NES, SNES ou Super Nintendo) é um console de videogame de 16 bits desenvolvido pela Nintendo que foi lançado em 1990 no Japão, 1991 nos Estados Unidos, 1992 na Europa e Australásia (Oceania) e América do Sul em 1993.",
+            "preco": 238.0,
+            "imagem": "../assets/img/produtos/console.snes.png",
+            "categoria": "consoles",
+            "id": 3
+        },
+        {
+            "nome": "GTA V para Playstation 4",
+            "descricao": "Entre nas vidas de três criminosos muito diferentes, Michael, Franklin e Trevor, enquanto eles arriscam tudo em uma série de assaltos ousados que podem garantir o resto de suas vidas. Explore o deslumbrante mundo de Los Santos e Blaine County na experiência definitiva de Grand Theft Auto V, apresentando amplas atualizações e melhorias técnicas tanto para jogadores novos quanto para os que estão retornando. Além de distâncias maiores de renderização e melhor resolução, os jogadores podem esperar diversas adições e melhorias.",
+            "preco": 112.0,
+            "imagem": "../assets/img/produtos/jogo_gtav.png",
+            "categoria": "jogos",
+            "id": 4
+        },
+        {
+            "nome": "Playstation 3 Slim 160GB",
+            "descricao": "Com seu console PlayStation 3 você terá entretenimento garantido todos os dias. Sua tecnologia foi criada para colocar desafios para jogadores novatos e especialistas. Você não só poderá baixar os melhores videogames e navegar na web sem limites, mas graças à sua interconectividade global, também poderá competir online com seus amigos e pessoas de todo o mundo desfrutando de aventuras inesquecíveis.",
+            "preco": 450,
+            "imagem": "../assets/img/produtos/console_ps3.png",
+            "categoria": "consoles",
+            "id": 5
+        },
+        {
+            "nome": "Amiibo Animal Crossing",
+            "descricao": "Amiibos Não São Bonecos De Ação, Eles Não Se Mexem E Não Servem Para Brincar, São Mais Como Miniaturas De Enfeite. Sua Base, No Entanto, Utiliza Tecnologia De Comunicação A Curta Distância, Nfc (Near-Field Communication), A Qual Permite Que Ele Se Comunique Com Outros Aparelhos Eletrônicos Através Da Proximidade. Na Prática Basta Aproximar O Boneco De Uma Certa Parte Do Controle Game Pad Do Nintendo Wii U Para Que O Jogo Possa Ler As Informações Nele. Aproxime O Boneco No Controle E O Personagem Poderá Surgir Na Tela.",
+            "preco": 45,
+            "imagem": "../assets/img/produtos/outros_amiibo_animal.png",
+            "categoria": "outros",
+            "id": 6
+        },
+        {
+            "nome": "Mega Drive 3",
+            "descricao": "Conhecido como Sega Genesis na América do Norte, é um console de video game de 16 bits da Sega que concorria diretamente com o Super Nintendo Entertainment System. O console fez grande sucesso na década de 1990, perdendo espaço após o surgimento e popularização da nova geração de consoles de 32 bits, como o PlayStation da Sony. ",
+            "preco": 185,
+            "imagem": "../assets/img/produtos/console.md.png",
+            "categoria": "consoles",
+            "id": 7
+        },
+        {
+            "nome": "Mousepad Razer",
+            "descricao": "Está em busca de um mousepad gamer radical e de alto padrão de qualidade, que, além de lindo, sincronize e harmonize de forma perfeita com todos os seus periféricos e produtos Razer? Então, o Razer Goliathus Chroma é ideal para você! Este mousepad Razer é muito diferenciado. Flexível, intenso, com ótimo desempenho para o mouse gamer, ideal para quem quer ultra speed ou controle rigoroso nas jogadas, este mousepad é tudo o que você poderia desejar para o aprimoramento definitivo do seu estilo de jogo.",
+            "preco": 118,
+            "imagem": "../assets/img/produtos/outros_mousepad.png",
+            "categoria": "outros",
+            "id": 8
+        },
+        {
+            "nome": "Nintendinho",
+            "descricao": "O Nintendo Entertainment System (NES, popularmente chamado de Nintendinho no Brasil) é um console de videogame de 8 bits lançado pela Nintendo na América do Norte, Europa, Ásia, Austrália e Brasil. Originalmente lançado no Japão em 1983 com o nome de Nintendo Family Computer, Family Computer, ou apenas Famicom, o sistema foi redesenhado e recebeu o novo nome para ser lançado no mercado americano em 1985.",
+            "preco": 349,
+            "imagem": "../assets/img/produtos/console_nes.png",
+            "categoria": "consoles",
+            "id": 9
+        },
+        {
+            "nome": "Poster Street Fighter V - 60 x 96",
+            "descricao": "Os quadros possuem moldura em madeira ecológica e reflorestada, com pintura fosca. As molduras estão disponíveis nas cores preto e branco, dando aspecto minimalista e design refinado ao ambiente. Todos os quadros com moldura já acompanham ganchos de suporte para pendurar na parede. Basta por um parafuso na parede e encaixar o quadro.",
+            "preco": 49,
+            "imagem": "../assets/img/produtos/outros_poster.png",
+            "categoria": "outros",
+            "id": 10
+        },
+        {
+            "nome": "Controle para Xbox 360",
+            "descricao": "Agora você pode jogar tanto no Xbox 360 ou no seu pc, este controle proporciona uma experiência consistente e agradável, com botões macios e ótima durabilidade.",
+            "preco": 179,
+            "imagem": "../assets/img/produtos/controle_x360.png",
+            "categoria": "controles",
+            "id": 11
+        },
+        {
+            "nome": "Controle para Dreamcast",
+            "descricao": "Este controle oferece uma grande precisão e diversão para os seus jogos preferidos de DreamCast. Você poderá relembar os bons momentos de jogatina, experimentando a nostalgia ou jogando pela primeira vez os grandes jogos dos anos 2000 como Sonic Adventure, Dead or Alive 2, Soul Calibur, Resident Evil, Power Stone e Street of Fighter.",
+            "preco": 231,
+            "imagem": "../assets/img/produtos/controle_dreamcast.png",
+            "categoria": "controles",
+            "id": 12
+        },
+        {
+            "nome": "Controle para Gamecube",
+            "descricao": "O Controle do GameCube é o controlador de jogo padrão do Nintendo GameCube, foi lançado no Japão em 14 de setembro de 2001. O design em formato de M do console antecessor, o Nintendo 64, foi substituído por uma formato mais convencional.",
+            "preco": 185,
+            "imagem": "../assets/img/produtos/controle_game_cube.png",
+            "categoria": "controles",
+            "id": 13
+        }
+    ],
+    "categorias": [
+        {
+            "nome": "consoles",
+            "id": 1
+        },
+        {
+            "nome": "controles",
+            "id": 2
+        },
+        {
+            "nome": "outros",
+            "id": 3
+        },
+        {
+            "nome": "jogos",
+            "id": 4
+        }
+    ]
 }

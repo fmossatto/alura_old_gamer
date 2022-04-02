@@ -222,3 +222,8 @@
 .vitrine_card_botao:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+.vitrine_card_botao a {
+    color: var(--branco);
+    text-decoration: none;
+}
