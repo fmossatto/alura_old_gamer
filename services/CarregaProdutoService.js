@@ -5,7 +5,7 @@ import { produtosService } from "./produtoService.js";
 */
 
 const carregaProduto = (id) => {
-    const url = `http://localhost:3000/produtos/${id}`;
+    const url = `https://json-server-for-alura-old-game.herokuapp.com/produtos/${id}`;
     let produtoContainer = document.createElement("div");
 
     produtosService.listarProdutos(url).then((dados) => {
@@ -38,7 +38,7 @@ const carregaTags = (categorias) => {
 };
 
 const carregaProdutos = (categoria, index, qualCard) => {
-    let url = "http://localhost:3000/produtos";
+    let url = "https://json-server-for-alura-old-game.herokuapp.com/produtos/";
     let vitrineCard = document.createElement("div");
 
     produtosService.listarProdutos(url).then((dados) => {

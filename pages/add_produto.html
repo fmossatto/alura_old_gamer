@@ -69,8 +69,12 @@
                             src="../assets/img/white_background.png"
                             alt="adicionar nova imagem"
                             class="add_produto_imagem"
+                            data-imagemProduto
                         />
-                        <div class="add_produto_semImagem">
+                        <div
+                            class="add_produto_semImagem"
+                            data-produtoSemImagem
+                        >
                             <i
                                 class="fa-solid fa-image add_produto_imagem_icon"
                             ></i>
@@ -83,28 +87,61 @@
                         </div>
                     </div>
                     <p class="add_produto_juncao">Ou</p>
-                    <button class="add_produto_procurar">
+                    <label for="input_file" class="add_produto_procurar">
                         Procure no seu computador
-                    </button>
+                    </label>
+                    <input
+                        type="file"
+                        class="add_produto_inputFile"
+                        id="input_file"
+                        accept="image/jpeg, image/png"
+                        data-inputFile
+                    />
                 </div>
 
+                <!--Inicio da sessão do formulário-->
                 <form class="add_produto_form">
+                    <p class="add_produto_urlImagem" data-caminhoImagem></p>
                     <input
                         class="add_produto_nome"
                         type="text"
                         placeholder="Nome do produto"
+                        required
+                        data-produtoNome
                     />
+                    <select
+                        name="categoria"
+                        class="add_produto_categoria"
+                        data-produtoCategoria
+                    >
+                        <option
+                            value="consoles"
+                            class="add_produto_categoria_option"
+                        >
+                            Consoles
+                        </option>
+                        <option
+                            value="controles"
+                            class="add_produto_categoria_option"
+                        >
+                            Controles
+                        </option>
+                    </select>
                     <input
                         class="add_produto_preco"
                         type="number"
                         placeholder="R$ 0,00"
+                        required
+                        data-produtoPreco
                     />
                     <textarea
                         class="add_produto_descricao"
                         rows="5"
                         placeholder="Descrição do produto"
+                        required
+                        data-produtoDescricao
                     ></textarea>
-                    <button class="add_produto_submit">
+                    <button class="add_produto_submit" data-enviarInformacao>
                         Adicionar Produto
                     </button>
                 </form>
@@ -190,6 +227,10 @@
         <script
             src="https://kit.fontawesome.com/5f5592f0e5.js"
             crossorigin="anonymous"
+        ></script>
+        <script
+            type="module"
+            src="../controllers/controllerAddProduto.js"
         ></script>
     </body>
 </html>

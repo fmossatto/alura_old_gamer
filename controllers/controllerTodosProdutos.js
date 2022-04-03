@@ -5,7 +5,8 @@ const inicializaElementos = () => {
         "[data-vitrineTodosProdutos]"
     );
     const qualCards = "cardEdicao";
-    const url = "http://localhost:3000/produtos/";
+    const url =
+        "https://json-server-for-alura-old-game.herokuapp.com/produtos/";
     let i = 0;
 
     CarregaProdutoService.produtosService.listarProdutos(url).then((dados) => {

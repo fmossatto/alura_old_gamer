@@ -17,7 +17,7 @@ const inicializaElementos = () => {
 };
 
 const carregaVitrineSimilares = async (id) => {
-    const url = `http://localhost:3000/produtos/${id}`;
+    const url = `https://json-server-for-alura-old-game.herokuapp.com/produtos/${id}`;
     const vitrineSimilares = document.querySelector("[data-vitrineSimilares]");
     const qualCards = "cardNormal";
 
