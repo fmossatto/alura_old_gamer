@@ -9,12 +9,7 @@ const carregaProduto = (id) => {
     let produtoContainer = document.createElement("div");
 
     produtosService.listarProdutos(url).then((dados) => {
-        produtoContainer.innerHTML = criaModeloProduto(
-            dados.imagem,
-            dados.nome,
-            dados.descricao,
-            dados.preco
-        );
+        produtoContainer.innerHTML = criaModeloProduto(dados.imagem, dados.nome, dados.descricao, dados.preco);
 
         produtoContainer.classList.add("produto_container");
         carregaTags(dados.categoria);
@@ -45,8 +40,7 @@ const carregaProdutos = (categoria, index, qualCard) => {
         let produtos = [];
 
         dados.forEach((produto) => {
-            if (produto.categoria == categoria || categoria == "")
-                produtos.push(produto);
+            if (produto.categoria == categoria || categoria == "") produtos.push(produto);
         });
 
         if (qualCard == "cardNormal") {
@@ -69,6 +63,7 @@ const carregaProdutos = (categoria, index, qualCard) => {
 
         //adiciona a classe responsável pela estilização na página principal...
         vitrineCard.classList.add("vitrine_card");
+        vitrineCard.dataset.id = produtos[index].id;
     });
 
     return vitrineCard;
@@ -136,7 +131,7 @@ const criaModeloCard = (imagem, nome, preco, id, qualCard) => {
                 <p class="vitrine_card_id">#${id}</p>
                 <div class="vitrine_card_botoesAcao">
                     <a class="vitrine_card_excluir">
-                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-trash excluirProduto"></i>
                     </a>
                     <a class="vitrine_card_editar">
                         <i class="fa-solid fa-pencil"></i>
