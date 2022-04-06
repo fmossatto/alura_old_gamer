@@ -27,7 +27,7 @@ inputFile.addEventListener("change", (e) => {
         .then((dados) => {
             imagemProduto.src = dados.data.link;
             caminhoImagem.textContent = dados.data.link;
-            console.log(dados.data.id);
+            produtoSemImagem.classList.add("desativado");
         });
     /*if (arquivo) {
         const reader = new FileReader();
@@ -49,7 +49,7 @@ enviarInformacao.addEventListener("click", (e) => {
     let nome = produtoNome.value;
     let descricao = produtoDescricao.value;
     let preco = parseInt(produtoPreco.value);
-    let imagem = "../assets/img/teste.png";
+    let imagem = caminhoImagem;
     let categoria = produtoCategoria.value;
 
     let retorno = produtosService.enviarProdutos(url, nome, descricao, preco, imagem, categoria);
