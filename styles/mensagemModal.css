@@ -1,0 +1,18 @@
+.mensagemModal {
+    align-items: center;
+    background-color: var(--primaria);
+    border: 2px solid var(--branco);
+    border-radius: 4px;
+    color: var(--branco);
+    display: none;
+    height: 5em;
+    justify-content: center;
+    left: calc(25% / 2);
+    position: absolute;
+    top: 0;
+    width: 75%;
+}
+
+.mensagemModal_ativo {
+    display: flex;
+}

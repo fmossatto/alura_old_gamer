@@ -4,12 +4,13 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Alura Old Gamer | Adicionar Produto</title>
+        <title>Alura Old Gamer | Editar Produto</title>
 
         <link rel="stylesheet" href="../styles/base.css" />
         <link rel="stylesheet" href="../styles/header.css" />
         <link rel="stylesheet" href="../styles/header_celular.css" />
         <link rel="stylesheet" href="../styles/header_tablet.css" />
+        <link rel="stylesheet" href="../styles/mensagemModal.css" />
         <link rel="stylesheet" href="../styles/pages_add_editar_produto/produto.css" />
         <link rel="stylesheet" href="../styles/pages_add_editar_produto/produto_celular.css" />
         <link rel="stylesheet" href="../styles/pages_add_editar_produto/produto_tablet.css" />
@@ -43,19 +44,13 @@
         <div class="container_principal">
             <section class="add_produto">
                 <div class="add_produto_header">
-                    <h2 class="add_produto_titulo">Adicionar novo produto</h2>
+                    <h2 class="add_produto_titulo">Editar produto</h2>
                 </div>
                 <div class="add_produto_foto">
                     <div class="add_produto_imagem_container">
-                        <img src="" class="add_produto_imagem" data-imagemProduto />
-                        <div class="add_produto_semImagem" data-produtoSemImagem>
-                            <i class="fa-solid fa-image add_produto_imagem_icon"></i>
-                            <p class="add_produto_imagem_info">Arraste para adicionar uma imagem para o produto</p>
-                            <p class="add_produto_imagem_infoMovel">Adicionar uma imagem para o produto</p>
-                        </div>
+                        <img class="add_produto_imagem" data-imagemProduto />
                     </div>
-                    <p class="add_produto_juncao">Ou</p>
-                    <label for="input_file" class="add_produto_procurar"> Procure no seu computador </label>
+                    <label for="input_file" class="add_produto_procurar"> Trocar Imagem? </label>
                     <input
                         type="file"
                         class="add_produto_inputFile"
@@ -87,11 +82,11 @@
                         required
                         data-produtoDescricao
                     ></textarea>
-                    <button class="add_produto_submit" data-enviarInformacao>Adicionar Produto</button>
+                    <button class="add_produto_submit" data-enviarInformacao>Confirmar Edição</button>
                 </form>
             </section>
             <div class="mensagemModal" data-mensagemModal>
-                <h3>Produto adicionado com sucesso</h3>
+                <h3>Produto atualizado com sucesso</h3>
             </div>
         </div>
 
@@ -149,6 +144,6 @@
         </footer>
 
         <script src="https://kit.fontawesome.com/5f5592f0e5.js" crossorigin="anonymous"></script>
-        <script type="module" src="../controllers/controllerAddProduto.js"></script>
+        <script type="module" src="../controllers/controllerEditarProduto.js"></script>
     </body>
 </html>

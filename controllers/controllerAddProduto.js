@@ -1,8 +1,9 @@
+import { produtosService } from "../services/produtoService.js";
+
 const inputFile = document.querySelector("[data-inputFile]");
 const imagemProduto = document.querySelector("[data-imagemProduto]");
 const caminhoImagem = document.querySelector("[data-caminhoImagem]");
 const produtoSemImagem = document.querySelector("[data-produtoSemImagem]");
-import { produtosService } from "../services/produtoService.js";
 
 const enviarInformacao = document.querySelector("[data-enviarInformacao]");
 const produtoDescricao = document.querySelector("[data-produtoDescricao]");
@@ -12,17 +13,33 @@ const produtoNome = document.querySelector("[data-produtoNome]");
 
 inputFile.addEventListener("change", (e) => {
     const arquivo = inputFile.files[0];
-    if (arquivo) {
+
+    const formdata = new FormData();
+    formdata.append("image", inputFile.files[0]);
+    fetch("https://api.imgur.com/3/image/", {
+        method: "post",
+        headers: {
+            Authorization: "Client-ID 14766a5be4d6795",
+        },
+        body: formdata,
+    })
+        .then((dados) => dados.json())
+        .then((dados) => {
+            imagemProduto.src = dados.data.link;
+            caminhoImagem.textContent = dados.data.link;
+            console.log(dados.data.id);
+        });
+    /*if (arquivo) {
         const reader = new FileReader();
         reader.onload = () => {
-            const result = reader.result;
+           let result = reader.result;
             imagemProduto.src = result;
             caminhoImagem.textContent = inputFile.value;
 
             produtoSemImagem.classList.add("desativado");
         };
         reader.readAsDataURL(arquivo);
-    }
+    }*/
 });
 
 enviarInformacao.addEventListener("click", (e) => {
@@ -32,17 +49,26 @@ enviarInformacao.addEventListener("click", (e) => {
     let nome = produtoNome.value;
     let descricao = produtoDescricao.value;
     let preco = parseInt(produtoPreco.value);
-    let imagem = null;
+    let imagem = "../assets/img/teste.png";
     let categoria = produtoCategoria.value;
 
-    let retorno = produtosService.enviarProdutos(
-        url,
-        nome,
-        descricao,
-        preco,
-        imagem,
-        categoria
-    );
-
-    console.log(retorno);
+    let retorno = produtosService.enviarProdutos(url, nome, descricao, preco, imagem, categoria);
+    retorno.then((dados) => {
+        let mensagemModal = document.querySelector("[data-mensagemModal]");
+        mensagemModal.classList.toggle("mensagemModal_ativo");
+        limparCampos();
+        setTimeout(() => {
+            mensagemModal.classList.toggle("mensagemModal_ativo");
+        }, 2500);
+    });
 });
+
+const limparCampos = () => {
+    imagemProduto.src = "";
+    produtoSemImagem.classList.remove("desativado");
+    caminhoImagem.textContent = "";
+    produtoDescricao.value = "";
+    produtoPreco.value = 0.0;
+    produtoCategoria.value = "";
+    produtoNome.value = "";
+};

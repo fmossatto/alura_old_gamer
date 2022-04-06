@@ -3,6 +3,7 @@
 .container_principal {
     background-color: var(--cinzaClaro);
     padding-top: 2em;
+    position: relative;
     width: 100%;
 }
 

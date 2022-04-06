@@ -4,6 +4,7 @@
     background-color: var(--cinzaClaro);
     display: flex;
     height: auto;
+    position: relative;
     width: 100%;
 }
 

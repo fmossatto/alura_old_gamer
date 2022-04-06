@@ -59,11 +59,11 @@ const carregaProdutos = (categoria, index, qualCard) => {
                 produtos[index].id,
                 qualCard
             );
+            vitrineCard.dataset.id = produtos[index].id;
         }
 
         //adiciona a classe responsável pela estilização na página principal...
         vitrineCard.classList.add("vitrine_card");
-        vitrineCard.dataset.id = produtos[index].id;
     });
 
     return vitrineCard;
@@ -134,7 +134,7 @@ const criaModeloCard = (imagem, nome, preco, id, qualCard) => {
                         <i class="fa-solid fa-trash excluirProduto"></i>
                     </a>
                     <a class="vitrine_card_editar">
-                        <i class="fa-solid fa-pencil"></i>
+                        <i class="fa-solid fa-pencil editarProduto"></i>
                     </a>
                 </div>`;
     }
