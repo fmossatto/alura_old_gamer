@@ -12,8 +12,6 @@ const produtoCategoria = document.querySelector("[data-produtoCategoria]");
 const produtoNome = document.querySelector("[data-produtoNome]");
 
 inputFile.addEventListener("change", (e) => {
-    const arquivo = inputFile.files[0];
-
     const formdata = new FormData();
     formdata.append("image", inputFile.files[0]);
     fetch("https://api.imgur.com/3/image/", {
@@ -49,7 +47,7 @@ enviarInformacao.addEventListener("click", (e) => {
     let nome = produtoNome.value;
     let descricao = produtoDescricao.value;
     let preco = parseInt(produtoPreco.value);
-    let imagem = caminhoImagem;
+    let imagem = caminhoImagem.textContent;
     let categoria = produtoCategoria.value;
 
     let retorno = produtosService.enviarProdutos(url, nome, descricao, preco, imagem, categoria);
