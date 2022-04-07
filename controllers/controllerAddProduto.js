@@ -14,7 +14,12 @@ const produtoNome = document.querySelector("[data-produtoNome]");
 inputFile.addEventListener("change", (e) => {
     const formdata = new FormData();
     formdata.append("image", inputFile.files[0]);
-    fetch("https://api.imgur.com/3/image/", {
+    produtosService.enviaImgur(formdata).then((dados) => {
+        imagemProduto.src = dados.data.link;
+        caminhoImagem.textContent = dados.data.link;
+        produtoSemImagem.classList.add("desativado");
+    });
+    /*fetch("https://api.imgur.com/3/image/", {
         method: "post",
         headers: {
             Authorization: "Client-ID 14766a5be4d6795",
@@ -26,7 +31,7 @@ inputFile.addEventListener("change", (e) => {
             imagemProduto.src = dados.data.link;
             caminhoImagem.textContent = dados.data.link;
             produtoSemImagem.classList.add("desativado");
-        });
+        });*/
     /*if (arquivo) {
         const reader = new FileReader();
         reader.onload = () => {

@@ -56,9 +56,22 @@ const editaProduto = (url, nome, descricao, preco, imagem, categoria) => {
     });
 };
 
+const enviaImgur = (formdata) => {
+    return fetch("https://api.imgur.com/3/image/", {
+        method: "post",
+        headers: {
+            Authorization: "Client-ID 14766a5be4d6795",
+        },
+        body: formdata,
+    }).then((resposta) => {
+        return resposta.json();
+    });
+};
+
 export const produtosService = {
     listarProdutos,
     enviarProdutos,
     removeProduto,
     editaProduto,
+    enviaImgur,
 };

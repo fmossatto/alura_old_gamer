@@ -26,30 +26,46 @@
                 <!--Bloco do Header --- contém toda a parte do cabeçalho-->
                 <div class="header_container_direita">
                     <div class="header_logo">
-                        <a href="./index.html"
-                            ><img
-                                src="./assets/img/logo1.svg"
-                                alt="icone da logo"
-                        /></a>
+                        <a href="./index.html"><img src="./assets/img/logo1.svg" alt="icone da logo" /></a>
                     </div>
                     <div class="header_pesquisa">
                         <div class="header_pesquisa_container">
-                            <input
-                                type="text"
-                                placeholder="O que deseja encontrar?"
-                            />
+                            <input type="text" placeholder="O que deseja encontrar?" data-headerPesquisa />
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                     </div>
                 </div>
                 <div class="header_login">
-                    <a href="./pages/login.html" class="header_login_button"
-                        >Login</a
-                    >
+                    <a href="./pages/login.html" class="header_login_button">Login</a>
                 </div>
                 <div class="header_pesquisa_responsivo">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
+
+                <!--Modal onde aparecerá o resultado da pesquisa...-->
+                <div class="header_pesquisa_resultado" data-pesquisaResultado>
+                    <!--<ul class="pesquisa_lista_resultado">
+                        <li class="lista_resultado_item">
+                            <a href="#" class="lista_item_link">
+                                <img src="./assets/img/produtos/console_ps4.png" class="lista_item_imagem" />
+                                Playstation 4
+                            </a>
+                        </li>
+                        <li class="lista_resultado_item">
+                            <a href="#" class="lista_item_link">
+                                <img src="./assets/img/produtos/console.snes.png" class="lista_item_imagem" />
+                                Super Nintendo
+                            </a>
+                        </li>
+                        <li class="lista_resultado_item">
+                            <a href="#" class="lista_item_link">
+                                <img src="./assets/img/produtos/controle_game_cube.png" class="lista_item_imagem" />
+                                Controle de Game Cube
+                            </a>
+                        </li>
+                    </ul>-->
+                </div>
+                <!--Fim do modal pesquisa-->
             </header>
 
             <!--Fim do Header - Cabeçalho-->
@@ -59,12 +75,9 @@
                 <div class="destaques_container">
                     <h2 class="destaques_titulo">Promoção Inaugural</h2>
                     <p class="destaques_descricao">
-                        Venha comemorar a nossa inauguração economizando 30% em
-                        qualquer controle
+                        Venha comemorar a nossa inauguração economizando 30% em qualquer controle
                     </p>
-                    <a href="#vitrine_controles" class="destaques_botao"
-                        >Ver produtos</a
-                    >
+                    <a href="#vitrine_controles" class="destaques_botao">Ver produtos</a>
                 </div>
             </section>
 
@@ -77,14 +90,9 @@
                     <div class="vitrine">
                         <div class="vitrine_header">
                             <h2 class="vitrine_titulo">Lançamentos</h2>
-                            <p class="vitrine_descricao">
-                                Todos os dias novidades para você
-                            </p>
+                            <p class="vitrine_descricao">Todos os dias novidades para você</p>
                         </div>
-                        <div
-                            class="vitrine_produtos"
-                            data-vitrineLancamentos
-                        ></div>
+                        <div class="vitrine_produtos" data-vitrineLancamentos></div>
                     </div>
 
                     <!--Fim da vitrine lançamentos-->
@@ -92,14 +100,9 @@
                     <div class="vitrine">
                         <div class="vitrine_header">
                             <h2 class="vitrine_titulo">Consoles</h2>
-                            <p class="vitrine_descricao">
-                                Temos diversão para todos os gostos
-                            </p>
+                            <p class="vitrine_descricao">Temos diversão para todos os gostos</p>
                         </div>
-                        <div
-                            class="vitrine_produtos"
-                            data-vitrineConsoles
-                        ></div>
+                        <div class="vitrine_produtos" data-vitrineConsoles></div>
                     </div>
 
                     <!--Fim da segunda vitrine de produtos-->
@@ -109,10 +112,7 @@
                             <h2 class="vitrine_titulo">Controles</h2>
                             <p class="vitrine_descricao">Escolha suas armas.</p>
                         </div>
-                        <div
-                            class="vitrine_produtos"
-                            data-vitrineControles
-                        ></div>
+                        <div class="vitrine_produtos" data-vitrineControles></div>
                     </div>
 
                     <!--Fim da terceira vitrine de produtos-->
@@ -120,15 +120,9 @@
                     <div class="vitrine">
                         <div class="vitrine_header">
                             <h2 class="vitrine_titulo">Diversos</h2>
-                            <p class="vitrine_descricao">
-                                Senão é video game que você procura, temos
-                                também.
-                            </p>
+                            <p class="vitrine_descricao">Senão é video game que você procura, temos também.</p>
                         </div>
-                        <div
-                            class="vitrine_produtos"
-                            data-vitrineDiversos
-                        ></div>
+                        <div class="vitrine_produtos" data-vitrineDiversos></div>
                     </div>
 
                     <!--Fim da quarta vitrine de produtos-->
@@ -141,11 +135,7 @@
                 <div class="footer_container">
                     <div class="footer_sobre">
                         <div class="footer_sobre_midia">
-                            <img
-                                class="footer_logo"
-                                src="./assets/img/logo1.svg"
-                                alt="icone da logo"
-                            />
+                            <img class="footer_logo" src="./assets/img/logo1.svg" alt="icone da logo" />
                             <div class="footer_social">
                                 <a href="./pages/add_produto.html">Facebook</a>
                                 <a href="#">instagram</a>
@@ -155,20 +145,13 @@
                         <!--Fim footer midias digitais-->
                         <div class="footer_sobre_quemSomos">
                             <p>
-                                Somos focados no varejo de produtos destinados a
-                                gamers de coração e de profissão, temos todos os
-                                tipos de periféricos e dispositivos que
-                                complementarão sua experiência com os games.
-                                Também temos consoles e jogos de todas as
-                                gerações, contemplando os primórdios da era do
-                                Atari 2600 e Odyssey, até os dias modernos com
-                                Playstation 5 e Xbox Series. Qualquer dúvida,
-                                crítica ou sugestão, disponibilizamos nossos
-                                canais para melhor atendermos nossos clientes,
-                                fiquem a vontade para entrar em contato conosco
-                                <span class="footer_sobre_destaque"
-                                    >e que a diversão nunca acabe.</span
-                                >
+                                Somos focados no varejo de produtos destinados a gamers de coração e de profissão, temos
+                                todos os tipos de periféricos e dispositivos que complementarão sua experiência com os
+                                games. Também temos consoles e jogos de todas as gerações, contemplando os primórdios da
+                                era do Atari 2600 e Odyssey, até os dias modernos com Playstation 5 e Xbox Series.
+                                Qualquer dúvida, crítica ou sugestão, disponibilizamos nossos canais para melhor
+                                atendermos nossos clientes, fiquem a vontade para entrar em contato conosco
+                                <span class="footer_sobre_destaque">e que a diversão nunca acabe.</span>
                             </p>
                         </div>
                         <!--Fim footer quem somos-->
@@ -178,22 +161,13 @@
                     <div class="footer_contato">
                         <h2 class="footer_contato_header">Fale Conosco</h2>
                         <form action="#" class="footer_contato_formulario">
-                            <input
-                                class="footer_contato_formulario_nome"
-                                type="text"
-                                placeholder="Digite seu nome"
-                            />
+                            <input class="footer_contato_formulario_nome" type="text" placeholder="Digite seu nome" />
                             <textarea
                                 class="footer_contato_formulario_mensagem"
                                 rows="5"
                                 placeholder="Digite sua mensagem"
                             ></textarea>
-                            <button
-                                type="submit"
-                                class="footer_contato_formulario_submit"
-                            >
-                                Enviar mensagem
-                            </button>
+                            <button type="submit" class="footer_contato_formulario_submit">Enviar mensagem</button>
                         </form>
                     </div>
                     <!--Fim footer contato-->
@@ -201,10 +175,7 @@
                 <!--fim do footer container-->
 
                 <div class="dev">
-                    <a
-                        href="https://www.linkedin.com/in/fernando-mossatto/"
-                        target="blank"
-                    >
+                    <a href="https://www.linkedin.com/in/fernando-mossatto/" target="blank">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
 
@@ -214,14 +185,8 @@
             </footer>
         </div>
 
-        <script
-            src="https://kit.fontawesome.com/5f5592f0e5.js"
-            crossorigin="anonymous"
-        ></script>
+        <script src="https://kit.fontawesome.com/5f5592f0e5.js" crossorigin="anonymous"></script>
 
-        <script
-            type="module"
-            src="./controllers/controllerListaProdutos.js"
-        ></script>
+        <script type="module" src="./controllers/controllerListaProdutos.js"></script>
     </body>
 </html>

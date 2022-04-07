@@ -1,4 +1,10 @@
 import { CarregaProdutoService } from "../services/CarregaProdutoService.js";
+import { produtosService } from "../services/produtoService.js";
+
+const inputPesquisa = document.querySelector("[data-headerPesquisa]");
+const resultadoPesquisa = document.querySelector("[data-pesquisaResultado]");
+
+console.log(resultadoPesquisa);
 
 /*  Captura as tags de vitrine do html e chama a função responsável
     por carregar os dados...
@@ -17,5 +23,15 @@ const inicializaElementos = () => {
         vitrineDiversos.appendChild(CarregaProdutoService.carregaProdutos("outros", i, qualCards));
     }
 };
+
+inputPesquisa.addEventListener("keyup", () => {
+    if (inputPesquisa.value) {
+        resultadoPesquisa.innerHTML = "";
+        resultadoPesquisa.classList.add("ativo");
+        resultadoPesquisa.appendChild(CarregaProdutoService.carregaPesquisa(inputPesquisa.value));
+    } else if (!inputPesquisa.value) {
+        resultadoPesquisa.classList.remove("ativo");
+    }
+});
 
 inicializaElementos();

@@ -69,6 +69,25 @@ const carregaProdutos = (categoria, index, qualCard) => {
     return vitrineCard;
 };
 
+const carregaPesquisa = (str) => {
+    let listaPesquisa = document.createElement("ul");
+    listaPesquisa.classList.add("pesquisa_lista_resultado");
+
+    let url = `https://json-server-for-alura-old-game.herokuapp.com/produtos/`;
+    produtosService.listarProdutos(url).then((dados) => {
+        dados.forEach((produto) => {
+            console.log(str);
+            if (produto.nome.toLowerCase().indexOf(str.toLowerCase()) != -1) {
+                let listaItem = document.createElement("li");
+                listaItem.innerHTML = criaModeloPesquisa(produto.id, produto.imagem, produto.nome);
+                listaItem.classList.add("lista_resultado_item");
+                listaPesquisa.appendChild(listaItem);
+            }
+        });
+    });
+    return listaPesquisa;
+};
+
 //#################################MODELOS####################################
 
 //modelo para a criação dos links da sessão categorias...
@@ -142,8 +161,16 @@ const criaModeloCard = (imagem, nome, preco, id, qualCard) => {
     return modeloCard;
 };
 
+const criaModeloPesquisa = (id, imagem, nome) => {
+    let modelo = `<a href="../pages/produto.html?id=${id}" class="lista_item_link">
+                        <img src="${imagem}" class="lista_item_imagem" />
+                        ${nome}
+                    </a>`;
+    return modelo;
+};
+
 export const CarregaProdutoService = {
     carregaProdutos,
     carregaProduto,
-    produtosService,
+    carregaPesquisa,
 };

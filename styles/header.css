@@ -1,4 +1,4 @@
-@import url('./variaveis.css');
+@import url("./variaveis.css");
 
 .header {
     align-items: center;
@@ -7,6 +7,7 @@
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1200px;
+    position: relative;
     width: 75%;
 }
 
@@ -29,7 +30,6 @@
     height: 2.5em;
     justify-content: space-around;
     width: 24.5em;
-
 }
 
 .header_pesquisa_container input {
@@ -73,4 +73,57 @@
     display: none;
     font-size: 2em;
     margin-left: 0.5em;
+}
+
+.header_pesquisa_resultado {
+    background-color: transparent;
+    border-radius: 4px;
+    display: none;
+    height: auto;
+    left: 12em;
+    max-height: 17em;
+    overflow: hidden;
+    position: absolute;
+    top: 5em;
+    width: 24.5em;
+}
+
+.pesquisa_lista_resultado {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.lista_resultado_item {
+    background-color: var(--cinzaClaro);
+    display: flex;
+    height: 3em;
+    width: 100%;
+}
+
+.lista_resultado_item:hover {
+    background-color: var(--cinzaEscuro);
+}
+
+.lista_item_link {
+    align-items: center;
+    color: var(--preto);
+    display: flex;
+    gap: 3em;
+    text-decoration: none;
+}
+
+.lista_item_imagem {
+    height: 100%;
+    object-fit: contain;
+    width: 4em;
+}
+
+.ativo {
+    display: flex;
 }
