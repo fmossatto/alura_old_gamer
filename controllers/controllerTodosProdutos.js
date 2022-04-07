@@ -8,7 +8,7 @@ const inicializaElementos = async () => {
     const url = "https://json-server-for-alura-old-game.herokuapp.com/produtos/";
     let i = 0;
 
-    await CarregaProdutoService.produtosService.listarProdutos(url).then((dados) => {
+    await produtosService.listarProdutos(url).then((dados) => {
         dados.forEach(() => {
             vitrineTodosProdutos.appendChild(CarregaProdutoService.carregaProdutos("", i, qualCards));
             i++;
