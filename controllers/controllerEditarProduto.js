@@ -2,12 +2,14 @@ import { produtosService } from "../services/produtoService.js";
 
 const inputFile = document.querySelector("[data-inputFile]");
 const enviarInformacao = document.querySelector("[data-enviarInformacao]");
+const produtoCategoria = document.querySelector("[data-produtoCategoria]");
 var id = "";
 
 const inicializaElementos = () => {
     const urlParams = new URLSearchParams(window.location.search);
     id = urlParams.get("id");
 
+    buscaCategorias();
     carregaDados();
 };
 
@@ -28,6 +30,20 @@ const carregaDados = () => {
         categoria.value = dados.categoria;
         preco.value = dados.preco;
         descricao.value = dados.descricao;
+    });
+};
+
+const buscaCategorias = () => {
+    let url = "https://json-server-for-alura-old-game.herokuapp.com/categorias/";
+    produtosService.listarProdutos(url).then((dados) => {
+        dados.forEach((categoria) => {
+            console.log(categoria.nome);
+            let option = document.createElement("option");
+            option.value = categoria.nome;
+            option.textContent = categoria.nome;
+            option.classList.add("add_produto_categoria_option");
+            produtoCategoria.appendChild(option);
+        });
     });
 };
 

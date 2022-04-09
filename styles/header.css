@@ -44,9 +44,16 @@
     color: var(--cinzaEscuro);
 }
 
-.header_pesquisa_container i {
+.header_pesquisa_container .icone_lupa {
     color: var(--cinzaEscuro);
     cursor: pointer;
+    font-size: 1.4em;
+}
+
+.header_pesquisa_container .icone_x {
+    color: var(--vermelho);
+    cursor: pointer;
+    display: none;
     font-size: 1.4em;
 }
 
@@ -86,6 +93,7 @@
     position: absolute;
     top: 5em;
     width: 24.5em;
+    z-index: 1;
 }
 
 .pesquisa_lista_resultado {

@@ -1,0 +1,20 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .vitrine {
+        width: 100%;
+    }
+
+    .vitrine_produtos {
+        gap: 1em;
+    }
+
+    .vitrine_card {
+        height: 20em;
+        margin-bottom: 0;
+        margin: 0 auto;
+        width: calc(80% / 2);
+    }
+
+    .vitrine_card_preco {
+        font-size: 1.5em;
+    }
+}

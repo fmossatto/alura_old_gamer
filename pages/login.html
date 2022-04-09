@@ -23,31 +23,26 @@
                 <!--Bloco do Header --- contém toda a parte do cabeçalho-->
                 <div class="header_container_direita">
                     <div class="header_logo">
-                        <a href="../index.html"
-                            ><img
-                                src="../assets/img/logo1.svg"
-                                alt="icone da logo"
-                        /></a>
+                        <a href="../index.html"><img src="../assets/img/logo1.svg" alt="icone da logo" /></a>
                     </div>
                     <div class="header_pesquisa">
-                        <div class="header_pesquisa_container">
-                            <input
-                                type="text"
-                                placeholder="O que deseja encontrar?"
-                            />
-                            <img
-                                src="../assets/img/search.svg"
-                                alt="icone de lupa"
-                            />
+                        <div class="header_pesquisa_container" data-containerPesquisa>
+                            <input type="text" placeholder="O que deseja encontrar?" data-headerPesquisa />
+                            <i class="fa-solid fa-magnifying-glass icone_lupa"></i>
+                            <i class="fa-solid fa-xmark icone_x" data-fecharPesquisa></i>
                         </div>
                     </div>
                 </div>
                 <div class="header_login">
                     <a href="./login.html" class="header_login_button">Login</a>
                 </div>
-                <div class="header_pesquisa_responsivo">
+                <div class="header_pesquisa_responsivo" data-pesquisaResponsivo>
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
+
+                <!--Modal onde aparecerá o resultado da pesquisa...-->
+                <div class="header_pesquisa_resultado" data-pesquisaResultado></div>
+                <!--Fim do modal pesquisa-->
             </header>
 
             <!--Fim do Header - Cabeçalho-->
@@ -56,19 +51,9 @@
                 <div class="formulario_container">
                     <h2 class="formulario_header">Iniciar Sessão</h2>
                     <form action="../pages/produtos.html" class="formulario">
-                        <input
-                            class="formulario_login"
-                            placeholder="Digite seu login"
-                            type="text"
-                        />
-                        <input
-                            class="formulario_senha"
-                            placeholder="Digite sua senha"
-                            type="password"
-                        />
-                        <button class="formulario_submit" type="submit">
-                            Entrar
-                        </button>
+                        <input class="formulario_login" placeholder="Digite seu login" type="text" />
+                        <input class="formulario_senha" placeholder="Digite sua senha" type="password" />
+                        <button class="formulario_submit" type="submit">Entrar</button>
                     </form>
                 </div>
             </section>
@@ -77,11 +62,7 @@
                 <div class="footer_container">
                     <div class="footer_sobre">
                         <div class="footer_sobre_midia">
-                            <img
-                                class="footer_logo"
-                                src="../assets/img/logo1.svg"
-                                alt="icone da logo"
-                            />
+                            <img class="footer_logo" src="../assets/img/logo1.svg" alt="icone da logo" />
                             <div class="footer_social">
                                 <p>facebook</p>
                                 <p>instagram</p>
@@ -91,20 +72,13 @@
                         <!--Fim footer midias digitais-->
                         <div class="footer_sobre_quemSomos">
                             <p>
-                                Somos focados no varejo de produtos destinados a
-                                gamers de coração e de profissão, temos todos os
-                                tipos de periféricos e dispositivos que
-                                complementarão sua experiência com os games.
-                                Também temos consoles e jogos de todas as
-                                gerações, contemplando os primórdios da era do
-                                Atari 2600 e Odyssey, até os dias modernos com
-                                Playstation 5 e Xbox Series. Qualquer dúvida,
-                                crítica ou sugestão, disponibilizamos nossos
-                                canais para melhor atendermos nossos clientes,
-                                fiquem a vontade para entrar em contato conosco
-                                <span class="footer_sobre_destaque"
-                                    >e que a diversão nunca acabe.</span
-                                >
+                                Somos focados no varejo de produtos destinados a gamers de coração e de profissão, temos
+                                todos os tipos de periféricos e dispositivos que complementarão sua experiência com os
+                                games. Também temos consoles e jogos de todas as gerações, contemplando os primórdios da
+                                era do Atari 2600 e Odyssey, até os dias modernos com Playstation 5 e Xbox Series.
+                                Qualquer dúvida, crítica ou sugestão, disponibilizamos nossos canais para melhor
+                                atendermos nossos clientes, fiquem a vontade para entrar em contato conosco
+                                <span class="footer_sobre_destaque">e que a diversão nunca acabe.</span>
                             </p>
                         </div>
                         <!--Fim footer quem somos-->
@@ -114,22 +88,13 @@
                     <div class="footer_contato">
                         <h2 class="footer_contato_header">Fale Conosco</h2>
                         <form action="#" class="footer_contato_formulario">
-                            <input
-                                class="footer_contato_formulario_nome"
-                                type="text"
-                                placeholder="Digite seu nome"
-                            />
+                            <input class="footer_contato_formulario_nome" type="text" placeholder="Digite seu nome" />
                             <textarea
                                 class="footer_contato_formulario_mensagem"
                                 rows="5"
                                 placeholder="Digite sua mensagem"
                             ></textarea>
-                            <button
-                                type="submit"
-                                class="footer_contato_formulario_submit"
-                            >
-                                Enviar mensagem
-                            </button>
+                            <button type="submit" class="footer_contato_formulario_submit">Enviar mensagem</button>
                         </form>
                     </div>
                     <!--Fim footer contato-->
@@ -137,10 +102,7 @@
                 <!--fim do footer container-->
 
                 <div class="dev">
-                    <a
-                        href="https://www.linkedin.com/in/fernando-mossatto/"
-                        target="blank"
-                    >
+                    <a href="https://www.linkedin.com/in/fernando-mossatto/" target="blank">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
 
@@ -152,9 +114,7 @@
             <!--Fim da Footer-->
         </div>
 
-        <script
-            src="https://kit.fontawesome.com/5f5592f0e5.js"
-            crossorigin="anonymous"
-        ></script>
+        <script src="https://kit.fontawesome.com/5f5592f0e5.js" crossorigin="anonymous"></script>
+        <script type="module" src="../controllers/controllerPesquisa.js"></script>
     </body>
 </html>

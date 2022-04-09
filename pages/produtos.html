@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="../styles/header_celular.css" />
         <link rel="stylesheet" href="../styles/header_tablet.css" />
         <link rel="stylesheet" href="../styles/pages_produtos/produtos.css" />
+        <link rel="stylesheet" href="../styles/pages_produtos/produtos_celular.css" />
+        <link rel="stylesheet" href="../styles/pages_produtos/produtos_tablet.css" />
         <link rel="stylesheet" href="../styles/mensagemModal.css" />
         <link rel="stylesheet" href="../styles/rodape.css" />
         <link rel="stylesheet" href="../styles/rodape_celular.css" />
@@ -21,31 +23,26 @@
             <!--Bloco do Header --- contém toda a parte do cabeçalho-->
             <div class="header_container_direita">
                 <div class="header_logo">
-                    <a href="../index.html"
-                        ><img src="../assets/img/logo1.svg" alt="icone da logo"
-                    /></a>
+                    <a href="../index.html"><img src="../assets/img/logo1.svg" alt="icone da logo" /></a>
                 </div>
                 <div class="header_pesquisa">
-                    <div class="header_pesquisa_container">
-                        <input
-                            type="text"
-                            placeholder="O que deseja encontrar?"
-                        />
-                        <img
-                            src="../assets/img/search.svg"
-                            alt="icone de lupa"
-                        />
+                    <div class="header_pesquisa_container" data-containerPesquisa>
+                        <input type="text" placeholder="O que deseja encontrar?" data-headerPesquisa />
+                        <i class="fa-solid fa-magnifying-glass icone_lupa"></i>
+                        <i class="fa-solid fa-xmark icone_x" data-fecharPesquisa></i>
                     </div>
                 </div>
             </div>
             <div class="header_login">
-                <a href="./login.html" class="header_login_button"
-                    >Menu Administrador</a
-                >
+                <a href="./produtos.html" class="header_login_button">Menu Administrador</a>
             </div>
-            <div class="header_pesquisa_responsivo">
+            <div class="header_pesquisa_responsivo" data-pesquisaResponsivo>
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
+
+            <!--Modal onde aparecerá o resultado da pesquisa...-->
+            <div class="header_pesquisa_resultado" data-pesquisaResultado></div>
+            <!--Fim do modal pesquisa-->
         </header>
 
         <section class="container_principal">
@@ -148,5 +145,6 @@
             type="module"
             src="../controllers/controllerTodosProdutos.js"
         ></script>
+        <script type="module" src="../controllers/controllerPesquisa.js"></script>
     </body>
 </html>

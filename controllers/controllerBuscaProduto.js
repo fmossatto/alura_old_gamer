@@ -14,19 +14,20 @@ const inicializaElementos = () => {
     carregaVitrineSimilares(id);
 };
 
-const carregaVitrineSimilares = (id) => {
+const carregaVitrineSimilares = async (id) => {
     const url = `https://json-server-for-alura-old-game.herokuapp.com/produtos/${id}`;
     const vitrineSimilares = document.querySelector("[data-vitrineSimilares]");
     const qualCards = "cardNormal";
 
     let categoria = "";
 
-    produtosService.listarProdutos(url).then((dados) => {
+    await produtosService.listarProdutos(url).then((dados) => {
         categoria = dados.categoria;
     });
 
     for (let i = 1; i < 5; i++) {
         vitrineSimilares.appendChild(CarregaProdutoService.carregaProdutos(categoria, i, qualCards));
+        console.log(categoria);
     }
 };
 

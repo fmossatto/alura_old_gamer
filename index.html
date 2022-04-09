@@ -29,42 +29,22 @@
                         <a href="./index.html"><img src="./assets/img/logo1.svg" alt="icone da logo" /></a>
                     </div>
                     <div class="header_pesquisa">
-                        <div class="header_pesquisa_container">
+                        <div class="header_pesquisa_container" data-containerPesquisa>
                             <input type="text" placeholder="O que deseja encontrar?" data-headerPesquisa />
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-magnifying-glass icone_lupa"></i>
+                            <i class="fa-solid fa-xmark icone_x" data-fecharPesquisa></i>
                         </div>
                     </div>
                 </div>
                 <div class="header_login">
                     <a href="./pages/login.html" class="header_login_button">Login</a>
                 </div>
-                <div class="header_pesquisa_responsivo">
+                <div class="header_pesquisa_responsivo" data-pesquisaResponsivo>
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
 
                 <!--Modal onde aparecerá o resultado da pesquisa...-->
-                <div class="header_pesquisa_resultado" data-pesquisaResultado>
-                    <!--<ul class="pesquisa_lista_resultado">
-                        <li class="lista_resultado_item">
-                            <a href="#" class="lista_item_link">
-                                <img src="./assets/img/produtos/console_ps4.png" class="lista_item_imagem" />
-                                Playstation 4
-                            </a>
-                        </li>
-                        <li class="lista_resultado_item">
-                            <a href="#" class="lista_item_link">
-                                <img src="./assets/img/produtos/console.snes.png" class="lista_item_imagem" />
-                                Super Nintendo
-                            </a>
-                        </li>
-                        <li class="lista_resultado_item">
-                            <a href="#" class="lista_item_link">
-                                <img src="./assets/img/produtos/controle_game_cube.png" class="lista_item_imagem" />
-                                Controle de Game Cube
-                            </a>
-                        </li>
-                    </ul>-->
-                </div>
+                <div class="header_pesquisa_resultado" data-pesquisaResultado></div>
                 <!--Fim do modal pesquisa-->
             </header>
 
@@ -188,5 +168,6 @@
         <script src="https://kit.fontawesome.com/5f5592f0e5.js" crossorigin="anonymous"></script>
 
         <script type="module" src="./controllers/controllerListaProdutos.js"></script>
+        <script type="module" src="./controllers/controllerPesquisa.js"></script>
     </body>
 </html>

@@ -19,31 +19,21 @@ inputFile.addEventListener("change", (e) => {
         caminhoImagem.textContent = dados.data.link;
         produtoSemImagem.classList.add("desativado");
     });
-    /*fetch("https://api.imgur.com/3/image/", {
-        method: "post",
-        headers: {
-            Authorization: "Client-ID 14766a5be4d6795",
-        },
-        body: formdata,
-    })
-        .then((dados) => dados.json())
-        .then((dados) => {
-            imagemProduto.src = dados.data.link;
-            caminhoImagem.textContent = dados.data.link;
-            produtoSemImagem.classList.add("desativado");
-        });*/
-    /*if (arquivo) {
-        const reader = new FileReader();
-        reader.onload = () => {
-           let result = reader.result;
-            imagemProduto.src = result;
-            caminhoImagem.textContent = inputFile.value;
-
-            produtoSemImagem.classList.add("desativado");
-        };
-        reader.readAsDataURL(arquivo);
-    }*/
 });
+
+const buscaCategorias = () => {
+    let url = "https://json-server-for-alura-old-game.herokuapp.com/categorias/";
+    produtosService.listarProdutos(url).then((dados) => {
+        dados.forEach((categoria) => {
+            console.log(categoria.nome);
+            let option = document.createElement("option");
+            option.value = categoria.nome;
+            option.textContent = categoria.nome;
+            option.classList.add("add_produto_categoria_option");
+            produtoCategoria.appendChild(option);
+        });
+    });
+};
 
 enviarInformacao.addEventListener("click", (e) => {
     e.preventDefault();
@@ -65,6 +55,8 @@ enviarInformacao.addEventListener("click", (e) => {
         }, 2500);
     });
 });
+
+buscaCategorias();
 
 const limparCampos = () => {
     imagemProduto.src = "";

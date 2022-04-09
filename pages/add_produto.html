@@ -26,18 +26,23 @@
                     <a href="../index.html"><img src="../assets/img/logo1.svg" alt="icone da logo" /></a>
                 </div>
                 <div class="header_pesquisa">
-                    <div class="header_pesquisa_container">
-                        <input type="text" placeholder="O que deseja encontrar?" />
-                        <img src="../assets/img/search.svg" alt="icone de lupa" />
+                    <div class="header_pesquisa_container" data-containerPesquisa>
+                        <input type="text" placeholder="O que deseja encontrar?" data-headerPesquisa />
+                        <i class="fa-solid fa-magnifying-glass icone_lupa"></i>
+                        <i class="fa-solid fa-xmark icone_x" data-fecharPesquisa></i>
                     </div>
                 </div>
             </div>
             <div class="header_login">
-                <a href="../pages/produtos.html" class="header_login_button">Menu Administrador</a>
+                <a href="./produtos.html" class="header_login_button">Menu Administrador</a>
             </div>
-            <div class="header_pesquisa_responsivo">
+            <div class="header_pesquisa_responsivo" data-pesquisaResponsivo>
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
+
+            <!--Modal onde aparecerá o resultado da pesquisa...-->
+            <div class="header_pesquisa_resultado" data-pesquisaResultado></div>
+            <!--Fim do modal pesquisa-->
         </header>
 
         <div class="container_principal">
@@ -76,8 +81,8 @@
                         data-produtoNome
                     />
                     <select name="categoria" class="add_produto_categoria" data-produtoCategoria>
-                        <option value="consoles" class="add_produto_categoria_option">Consoles</option>
-                        <option value="controles" class="add_produto_categoria_option">Controles</option>
+                        <!--<option value="consoles" class="add_produto_categoria_option">Consoles</option>
+                        <option value="controles" class="add_produto_categoria_option">Controles</option>-->
                     </select>
                     <input class="add_produto_preco" type="number" placeholder="R$ 0,00" required data-produtoPreco />
                     <textarea
@@ -150,5 +155,6 @@
 
         <script src="https://kit.fontawesome.com/5f5592f0e5.js" crossorigin="anonymous"></script>
         <script type="module" src="../controllers/controllerAddProduto.js"></script>
+        <script type="module" src="../controllers/controllerPesquisa.js"></script>
     </body>
 </html>

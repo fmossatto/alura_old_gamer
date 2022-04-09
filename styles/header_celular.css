@@ -15,6 +15,14 @@
         display: none;
     }
 
+    .header_pesquisa_container_ativo {
+        border: 1px solid var(--preto);
+        display: flex;
+        left: 0;
+        position: absolute;
+        z-index: 1;
+    }
+
     .header_login_button {
         padding: 0.5em;
         min-width: 7em;
@@ -26,5 +34,10 @@
         cursor: pointer;
         display: inline-block;
         font-size: 1.5em;
+    }
+
+    .header_pesquisa_resultado {
+        left: 0;
+        top: 5.5em;
     }
 }
