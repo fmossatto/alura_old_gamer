@@ -20,6 +20,7 @@
         display: flex;
         left: 0;
         position: absolute;
+        width: 23em;
         z-index: 1;
     }
 
@@ -39,5 +40,6 @@
     .header_pesquisa_resultado {
         left: 0;
         top: 5.5em;
+        width: 23em;
     }
 }

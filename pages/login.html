@@ -51,8 +51,8 @@
                 <div class="formulario_container">
                     <h2 class="formulario_header">Iniciar Sessão</h2>
                     <form action="../pages/produtos.html" class="formulario">
-                        <input class="formulario_login" placeholder="Digite seu login" type="text" />
-                        <input class="formulario_senha" placeholder="Digite sua senha" type="password" />
+                        <input class="formulario_login" placeholder="Digite seu login" type="text" required />
+                        <input class="formulario_senha" placeholder="Digite sua senha" type="password" required />
                         <button class="formulario_submit" type="submit">Entrar</button>
                     </form>
                 </div>
@@ -88,11 +88,17 @@
                     <div class="footer_contato">
                         <h2 class="footer_contato_header">Fale Conosco</h2>
                         <form action="#" class="footer_contato_formulario">
-                            <input class="footer_contato_formulario_nome" type="text" placeholder="Digite seu nome" />
+                            <input
+                                class="footer_contato_formulario_nome"
+                                type="text"
+                                placeholder="Digite seu nome"
+                                required
+                            />
                             <textarea
                                 class="footer_contato_formulario_mensagem"
                                 rows="5"
                                 placeholder="Digite sua mensagem"
+                                required
                             ></textarea>
                             <button type="submit" class="footer_contato_formulario_submit">Enviar mensagem</button>
                         </form>

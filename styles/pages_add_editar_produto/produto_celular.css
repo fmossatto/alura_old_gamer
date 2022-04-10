@@ -24,7 +24,7 @@
     }
 
     .add_produto_procurar {
-        display: none;
+        width: calc(75% - 2em);
     }
 
     .add_produto_imagem_container {

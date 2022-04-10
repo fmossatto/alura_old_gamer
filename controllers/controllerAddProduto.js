@@ -25,17 +25,16 @@ const buscaCategorias = () => {
     let url = "https://json-server-for-alura-old-game.herokuapp.com/categorias/";
     produtosService.listarProdutos(url).then((dados) => {
         dados.forEach((categoria) => {
-            console.log(categoria.nome);
             let option = document.createElement("option");
-            option.value = categoria.nome;
-            option.textContent = categoria.nome;
+            option.value = categoria.categoria;
+            option.textContent = categoria.categoria;
             option.classList.add("add_produto_categoria_option");
             produtoCategoria.appendChild(option);
         });
     });
 };
 
-enviarInformacao.addEventListener("click", (e) => {
+enviarInformacao.addEventListener("submit", (e) => {
     e.preventDefault();
 
     let url = `https://json-server-for-alura-old-game.herokuapp.com/produtos/`;

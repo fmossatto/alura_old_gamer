@@ -83,14 +83,15 @@
 }
 
 .header_pesquisa_resultado {
-    background-color: transparent;
+    background-color: var(--branco);
     border-radius: 4px;
     display: none;
     height: auto;
     left: 12em;
-    max-height: 17em;
+    max-height: calc(15em + 5px);
     overflow: hidden;
     position: absolute;
+    box-shadow: 0 1px 4px var(--preto);
     top: 5em;
     width: 24.5em;
     z-index: 1;
@@ -99,7 +100,6 @@
 .pesquisa_lista_resultado {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
     height: 100%;
     list-style: none;
     margin: 0;
@@ -108,7 +108,8 @@
 }
 
 .lista_resultado_item {
-    background-color: var(--cinzaClaro);
+    background-color: transparent;
+    border-bottom: 2px solid var(--cinzaClaro);
     display: flex;
     height: 3em;
     width: 100%;

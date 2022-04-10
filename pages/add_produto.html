@@ -71,28 +71,25 @@
                 </div>
 
                 <!--Inicio da sessão do formulário-->
-                <form class="add_produto_form">
+                <form action="#" class="add_produto_form">
                     <p class="add_produto_urlImagem" data-caminhoImagem></p>
                     <input
                         class="add_produto_nome"
                         type="text"
                         placeholder="Nome do produto"
-                        required
                         data-produtoNome
+                        required
                     />
-                    <select name="categoria" class="add_produto_categoria" data-produtoCategoria>
-                        <!--<option value="consoles" class="add_produto_categoria_option">Consoles</option>
-                        <option value="controles" class="add_produto_categoria_option">Controles</option>-->
-                    </select>
+                    <select name="categoria" class="add_produto_categoria" data-produtoCategoria></select>
                     <input class="add_produto_preco" type="number" placeholder="R$ 0,00" required data-produtoPreco />
                     <textarea
                         class="add_produto_descricao"
                         rows="5"
                         placeholder="Descrição do produto"
-                        required
                         data-produtoDescricao
+                        required
                     ></textarea>
-                    <button class="add_produto_submit" data-enviarInformacao>Adicionar Produto</button>
+                    <button type="submit" class="add_produto_submit" data-enviarInformacao>Adicionar Produto</button>
                 </form>
             </section>
             <div class="mensagemModal" data-mensagemModal>
@@ -130,11 +127,17 @@
                 <div class="footer_contato">
                     <h2 class="footer_contato_header">Fale Conosco</h2>
                     <form action="#" class="footer_contato_formulario">
-                        <input class="footer_contato_formulario_nome" type="text" placeholder="Digite seu nome" />
+                        <input
+                            class="footer_contato_formulario_nome"
+                            type="text"
+                            placeholder="Digite seu nome"
+                            required
+                        />
                         <textarea
                             class="footer_contato_formulario_mensagem"
                             rows="5"
                             placeholder="Digite sua mensagem"
+                            required
                         ></textarea>
                         <button type="submit" class="footer_contato_formulario_submit">Enviar mensagem</button>
                     </form>
