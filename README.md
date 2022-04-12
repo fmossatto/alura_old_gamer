@@ -10,7 +10,7 @@ Criar a página principal do projeto apenas usando HTML e CSS, e implementando t
 :calendar: Semana 02 - :white_check_mark:
 Criar a página de login, criar a página de descrição do produto contendo os detalhes do produto e produtos similares, criar a página para adicionar novos produtos além de criar a página para listar todos os produtos cadastrados. Todas as páginas devem conter um design responsivo para celulares e tablets.
 
-:calendar: Semana 03 e 04 - :red_circle:
+:calendar: Semana 03 e 04 - :white_check_mark:
 Focada em javascript, as duas últimas semanas tem o desafio de popular as páginas com dados dinâmicos, buscando as informações de alguma fonte externa, ficando a critério do participante escolher entre back ends reais ou fakes (como o json server). Os últimos desafios tem como proposta também a validação dos formulários contidos nas páginas.
 
 # O Caminho até agora :chart_with_upwards_trend:
@@ -39,6 +39,21 @@ Assim como na semana 01, também mudei um pouco o layout proposto pelo desafio.
 
 * Quanto as funcionalidades das páginas, segui o proposto pelo desafiio;
 
-  
+## Semana 03 e 04
+Na semana 03 e 04 foi proposto a implementação das mecânicas de busca, listagem e comportamento dos produtos exibidos, assim como validação dos formulários.
 
-[Link do Guithub pages do projeto](https://fmossatto.github.io/alura_old_gamer/)
+* Foi feito o deploy do json-server no Heroku com uma base pré cadastrada, responsável por popular a página numa intereção inicial. O deploy aceita pesquisas, inserções, atualizações e exclusões. (Obs: como o Heroku tem a característica de inativar o serviço após um tempo sem interação, sempre que uma nova interação for feita após a inativação o serviço demorará um pouquinho para carregar e por conta dessa inativação a base de dados volta ao estado inicial.)
+
+* Foi optado por utilizar a API pública do site [imgur](https://imgur.com/) para armazenamento das imagens, ao escolher a imagem no formulário de cadastrado é feito um upoload na base do imgur e retornado o link da imagem.
+
+* Foi criado uma sessão na página de detalhes do produto que apresenta produtos similares, levando em consideração a categoria do objeto detalhado.
+
+* Foi implementado a lógica para a barra de pesquisa, que faz a busca pelo nome do objeto.
+
+* E assim como as demais semanas, foi tomada a liberdade de mudar o layout e o design da página, mas sempre seguinte o conceito básico proposto.
+
+  
+# Considerações Finais :exclamation:
+Ao fim dessa jornada de aprendizado posso dizer que estou satisfeito com o resultado, apesar de ser uma página simples foi adquirido muito conhecimento que com certeza levarei para projetos futuros.
+
+[Link da página no vercel](https://alura-old-gamer.vercel.app/)
