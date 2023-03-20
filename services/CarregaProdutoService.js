@@ -1,17 +1,22 @@
-import { produtosService } from "./produtoService.js";
+import { produtosService } from './produtoService.js';
 
 /*  carrega os produtos na vitrine de acordo com a categoria, caso a categoria
     for vazia pega os últimos produtos como lançamentos...
 */
 
 const carregaProduto = (id) => {
-    const url = `https://json-server-for-alura-old-game.herokuapp.com/produtos/${id}`;
-    let produtoContainer = document.createElement("div");
+    const url = `https://my-json-server.typicode.com/fmossatto/alura_old_gamer_db/produtos/${id}`;
+    let produtoContainer = document.createElement('div');
 
     produtosService.listarProdutos(url).then((dados) => {
-        produtoContainer.innerHTML = criaModeloProduto(dados.imagem, dados.nome, dados.descricao, dados.preco);
+        produtoContainer.innerHTML = criaModeloProduto(
+            dados.imagem,
+            dados.nome,
+            dados.descricao,
+            dados.preco
+        );
 
-        produtoContainer.classList.add("produto_container");
+        produtoContainer.classList.add('produto_container');
         carregaTags(dados.categoria);
     });
 
@@ -20,30 +25,30 @@ const carregaProduto = (id) => {
 
 //cria os itens do menu categorias e carrega as informações...
 const carregaTags = (categorias) => {
-    const listaTags = document.querySelector("[data-produtoTagsLista]");
+    const listaTags = document.querySelector('[data-produtoTagsLista]');
 
-    let listaItem = document.createElement("li");
-    let listaLink = document.createElement("a");
+    let listaItem = document.createElement('li');
+    let listaLink = document.createElement('a');
 
     listaLink.innerHTML = criaModeloLink(categorias);
     listaItem.appendChild(listaLink);
-    listaItem.classList.add("produto_tags_itens");
+    listaItem.classList.add('produto_tags_itens');
 
     listaTags.appendChild(listaItem);
 };
 
 const carregaProdutos = (categoria, index, qualCard) => {
-    let url = "https://json-server-for-alura-old-game.herokuapp.com/produtos/";
-    let vitrineCard = document.createElement("div");
+    let url = 'https://my-json-server.typicode.com/fmossatto/alura_old_gamer_db/produtos/';
+    let vitrineCard = document.createElement('div');
 
     produtosService.listarProdutos(url).then((dados) => {
         let produtos = [];
 
         dados.forEach((produto) => {
-            if (produto.categoria == categoria || categoria == "") produtos.push(produto);
+            if (produto.categoria == categoria || categoria == '') produtos.push(produto);
         });
 
-        if (qualCard == "cardNormal") {
+        if (qualCard == 'cardNormal') {
             vitrineCard.innerHTML = criaModeloCard(
                 produtos[produtos.length - index].imagem,
                 produtos[produtos.length - index].nome,
@@ -51,7 +56,7 @@ const carregaProdutos = (categoria, index, qualCard) => {
                 produtos[produtos.length - index].id,
                 qualCard
             );
-        } else if (qualCard == "cardEdicao") {
+        } else if (qualCard == 'cardEdicao') {
             vitrineCard.innerHTML = criaModeloCard(
                 produtos[index].imagem,
                 produtos[index].nome,
@@ -63,24 +68,24 @@ const carregaProdutos = (categoria, index, qualCard) => {
         }
 
         //adiciona a classe responsável pela estilização na página principal...
-        vitrineCard.classList.add("vitrine_card");
+        vitrineCard.classList.add('vitrine_card');
     });
 
     return vitrineCard;
 };
 
 const carregaPesquisa = (str) => {
-    let listaPesquisa = document.createElement("ul");
-    listaPesquisa.classList.add("pesquisa_lista_resultado");
+    let listaPesquisa = document.createElement('ul');
+    listaPesquisa.classList.add('pesquisa_lista_resultado');
 
-    let url = `https://json-server-for-alura-old-game.herokuapp.com/produtos/`;
+    let url = `https://my-json-server.typicode.com/fmossatto/alura_old_gamer_db/produtos/`;
     produtosService.listarProdutos(url).then((dados) => {
         dados.forEach((produto) => {
             console.log(str);
             if (produto.nome.toLowerCase().indexOf(str.toLowerCase()) != -1) {
-                let listaItem = document.createElement("li");
+                let listaItem = document.createElement('li');
                 listaItem.innerHTML = criaModeloPesquisa(produto.id, produto.imagem, produto.nome);
-                listaItem.classList.add("lista_resultado_item");
+                listaItem.classList.add('lista_resultado_item');
                 listaPesquisa.appendChild(listaItem);
             }
         });
@@ -129,7 +134,7 @@ const criaModeloProduto = (imagem, nome, descricao, preco) => {
 //Cria o Modelo html para renderização das vitrinesCards....
 const criaModeloCard = (imagem, nome, preco, id, qualCard) => {
     let modeloCard = ``;
-    if (qualCard == "cardNormal") {
+    if (qualCard == 'cardNormal') {
         modeloCard = `
           <img class="vitrine_card_imagem" src="${imagem}"/>
           <p class="vitrine_card_nome">${nome}</p>
@@ -137,7 +142,7 @@ const criaModeloCard = (imagem, nome, preco, id, qualCard) => {
           <button class="vitrine_card_botao">
               <a href="../pages/produto.html?id=${id}">Veja o produto</a>
           </button>`;
-    } else if (qualCard == "cardEdicao") {
+    } else if (qualCard == 'cardEdicao') {
         modeloCard = `
                 <img
                     class="vitrine_card_imagem"
